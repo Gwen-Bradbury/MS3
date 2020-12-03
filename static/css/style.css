@@ -2,3 +2,7 @@ body {
     background-color: #37474f;
     color: #fff;
 }
+
+.flash-message h4 {
+    line-height: 3;
+}
