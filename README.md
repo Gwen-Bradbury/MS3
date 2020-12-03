@@ -116,6 +116,8 @@ develop this site, as well as technologies such as Materialize for responsivenes
 
 ### Bugs and Fixes Implemented after Testing -
 
+- _Images_ - Changed headline image as the origional one looked pixelated and streched.
+
 ## Technologies Used
 
 ### Languages-
