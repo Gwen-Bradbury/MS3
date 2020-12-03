@@ -27,7 +27,7 @@
 					<li><a href="{{ url_for('get_walks') }}">Home</a></li>
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
-					<li><a href="#">My Walks</a></li>
+					<li><a href="{{ url_for('mywalks', username=session['user']) }}">My Walks</a></li>
 					<li><a href="#">Add A Walk</a></li>
 					<li><a href="#">Add A Park</a></li>
                     <li><a href="#">Log Out</a></li>
@@ -40,7 +40,7 @@
 			<li><a href="{{ url_for('get_walks') }}">Home</a></li>
             <li><a href="{{ url_for('login') }}">Login</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
-			<li><a href="#">My Walks</a></li>
+			<li><a href="{{ url_for('mywalks', username=session['user']) }}">My Walks</a></li>
 			<li><a href="#">Add A Walk</a></li>
 			<li><a href="#">Add A Park</a></li>
             <li><a href="#">Log Out</a></li>
@@ -48,7 +48,7 @@
 	</header>
 
     <div>
-        <img class="main-image" src="static/images/main-image.jpg">
+        <img class="main-image" src="/static/images/main-image.jpg" alt="Sunrise on hills">
     </div>
 
     <section>
