@@ -82,7 +82,19 @@ def mywalks(username):
     # Get session users username from DB
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("mywalks.html", username=username)
+
+    if session["user"]:
+        return render_template("mywalks.html", username=username)
+
+    return redirect(url_for("login"))
+
+
+@app.route("/logout")
+def logout():
+    # Remove user from session cookies
+    flash("You've Been Logged Out")
+    session.pop("user")
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":
