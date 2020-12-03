@@ -43,7 +43,7 @@ I have produced a mock up of all of my app's pages.
 1. _Strategy Plane_ - From the onset I knew that my primary aim was to encourage people who enjoy walking to explore different UK National Parks in a way that was engaging and simple, therefore stimulating them to get back outdoors and into the countryside. My main focus thoughout this project has been to excute this aim. I started the UX process by making a list of user stories, which allowed me to visualise what would be necessary to satisy them.
 2. _Scope Plane_ - Having decided the main aim for the project, I began outlining the key features that I wanted my website to have.
 To do so, I focused on the Python and Javascript I would need to implement, as I knew this would be crucial to the aim of making the website interactive. This led me to decide that I wanted to focus on two key features: a registration form and login page, and a page for users to add walks to a list, with the added option to delete walks they've added if needed.
-3. _Structure Plane_ - Once I had narrowed down the features I wanted to include, I formulated the structure of my design into 3 seperate pages:
+3. _Structure Plane_ - Once I had narrowed down the features I wanted to include, I formulated the structure of my design into 6 seperate pages:
 4. _Skeleton Plane_ -
 5. _Surface Plane_ -
 
@@ -56,3 +56,102 @@ To do so, I focused on the Python and Javascript I would need to implement, as I
 #### Colour Pallette-
 
 I used coolors to generate my colour scheme-
+
+https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
+
+And matched this as best I could to the CCS colors on Materialize, which I used throughout my project.
+
+#### Font-
+
+## User Stories
+
+### As a Site User - 
+
+- As a user, I want to know how the website works and have easy to follow instructions.
+
+- As a user, I want to know when I take the wrong action or when something doesn't work.
+
+- As a user, I want the website to be interactive with real time feedback.
+
+- As a user, I want the the website to be easy to use and navigate.
+
+### As a Designer-
+
+- As a web designer and developer, I want to track the user behaviour so that I can improve the user experience. I want to track the user behaviour so that I can identify the possible user confusion over navigating the website.
+I want feed back from the users on what features are being used most frequently and ideas on other interesting walks.
+
+- As a web designer and developer, I want the website to be interactive and give real time feedback when a user executes an action.
+
+### As an Employer-
+
+- As an employer/recruiter, I need to see and review the skills and work capabilities, and analyze if you have the skills we require. In this website I've used many user-friendly features to showcase my skills as a developer.
+From the layout and colour scheme to the interactivity, every implemented piece of code has been built to make the site as appealing and easy to use for customers as possible.
+Possible employers will be able to see from the website and the features implemented that my standard of work is very high, and my capabilities reflect my current skillset, which will improve as I gain more knowledge moving through
+the Code Institute Full Stack Developer course.
+
+- On our Human Resources team, we look for the information that pertains to the specific needs of the company, and does this individual have those skill sets. My skill sets are evidenced in the website produced. I've used a wide range of HTML, CSS, JavaScript and Jinja to
+develop this site, as well as technologies such as Materialize for responsiveness.
+
+## Features
+
+### Exsisting Features-
+
+#### Features on the Home Page -
+
+- _Navbar_ - 
+
+#### Features on the Login Page-
+
+#### Features on the Register Page-
+
+#### Features on the Add a Walk Page-
+
+#### Features on the Manage Parks Page-
+
+#### Features on the Users Walks Page-
+
+### Features left to Implement -
+
+### Bugs and Fixes Implemented after Testing -
+
+## Technologies Used
+
+### Languages-
+
+1. **HTML, or Hyper Text Markup Language:** Used to construct the page withn this app. For further info on this language, see this link;  
+https://developer.mozilla.org/en-US/docs/Web/HTML
+
+2. **CSS, or Cascading Style Sheets:** Used to style the various elements on the app's pages via coloring, fonts, spacing, etc. For further info, see this link;
+https://www.w3.org/Style/CSS/Overview.en.html
+
+### Libraries-
+
+1. https://materializecss.com/ - navbar
+
+### API's-
+
+### Tools-
+
+## Testing
+
+### Validation of Code Testing-
+
+## Deployment
+
+#### Used Commands during Deployment -
+
+### Hosting on GitHub Pages-
+
+### Running this Project Locally-
+
+## Credits
+
+### Content-
+
+### Media-
+
+### Acknowledgements-
+
+## Disclaimer
+
+#### This website was made for educational purposes only
