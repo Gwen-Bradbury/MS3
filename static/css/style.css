@@ -6,3 +6,8 @@ body {
 .flash-message h4 {
     line-height: 3;
 }
+
+.main-image {
+    height: 75vh;
+    width: 100%;
+}
