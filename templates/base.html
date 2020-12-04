@@ -27,7 +27,7 @@
 					<li><a href="{{ url_for('get_walks') }}">Home</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('mywalks', username=session['user']) }}">My Walks</a></li>
-                        <li><a href="#">Add A Walk</a></li>
+                        <li><a href="{{ url_for('add_walk') }}">Add A Walk</a></li>
                         <li><a href="#">Add A Park</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
@@ -43,7 +43,7 @@
 			<li><a href="{{ url_for('get_walks') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('mywalks', username=session['user']) }}">My Walks</a></li>
-                <li><a href="#">Add A Walk</a></li>
+                <li><a href="{{ url_for('add_walk') }}">Add A Walk</a></li>
                 <li><a href="#">Add A Park</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
