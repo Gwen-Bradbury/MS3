@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_walks")
 def get_walks():
-    walks = mongo.db.walks.find()
+    walks = list(mongo.db.walks.find())
     return render_template("walks.html", walks=walks)
 
 

@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% block content %}   
 
-    {% for walk in walks %}
-        {{ walk.walk_name }}<br>
-        {{ walk.park_name }}<br>
-        {{ walk.walk_description }}<br>
-        {{ walk.walk_length }}<br>
-    {% endfor %}
-
     <div class="row">
         <div class="col s4">
             <div class="card">
@@ -61,18 +54,19 @@
     </div>
 
     <ul class="collapsible popout blue-grey-text text-darken-3">
+        {% for walk in walks %}
         <li>
-            <div class="collapsible-header"><i class="fas fa-caret-down"></i></div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-header">
+                <i class="fas fa-caret-down"></i>
+                <strong>{{ walk.walk_name }}</strong>
+            </div>
+            <div class="collapsible-body blue-grey-text text-darken-3">
+                <strong>{{ walk.park_name }}</strong>
+                <p>{{ walk.walk_description }}</p>
+                <p>{{ walk.walk_length }}</p>
+            </div>
         </li>
-        <li>
-            <div class="collapsible-header"><i class="fas fa-caret-down"></i></div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i class="fas fa-caret-down"></i></div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
+        {% endfor %}
   </ul>
  
 
