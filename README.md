@@ -84,6 +84,10 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 ### As a Site User - 
 
+- As a user, I want to be able to add and delete my input easily.
+
+- As a user, I want to find what I'm looking for quickly and easily.
+
 - As a user, I want to know how the website works and have easy to follow instructions.
 
 - As a user, I want to know when I take the wrong action or when something doesn't work.
@@ -94,7 +98,7 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 ### As a Designer-
 
-- As a web designer and developer, I want to track the user behaviour so that I can improve the user experience. I want to track the user behaviour so that I can identify the possible user confusion over navigating the website.
+- As a web designer and developer, I want to track the user behaviour so that I can improve the user experience. I want to track the user behaviour so that I can identify the possible user confusion over navigating the app.
 I want feed back from the users on what features are being used most frequently and ideas on other interesting walks.
 
 - As a web designer and developer, I want the website to be interactive and give real time feedback when a user executes an action.
