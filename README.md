@@ -11,9 +11,10 @@ This is my third milestone project; Designed to exhibit my capabilities and skil
 of Code Institute. (https://codeinstitute.net/)
 The goal was to showcase my skills to potential employers/recruiters, on a topic that I'm deeply interested in.
 My project allows users to discover new walks within the UK, inspiring them to get outside and enjoy the beautiful English countryside.
-
-(*Pages and what's on them)
-
+My app contains a landing page, complete with headline image and linked images of the UK's National Parks.
+There's a login and register page containing required form fields that give you access to the rest of the site, where users can add and delete parks and walks that they've added. There's also a 'My Walks' page that lists all the 
+walks that they've added.
+The last link is a 'Log Out' button that logs users out of the app by removing thier session cookies.
 The website is colourful and engaging, drawing the user in with bright, bold images and standout text, which I hope entices them
 to get planning thier next walking route.
 
