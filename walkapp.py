@@ -99,7 +99,8 @@ def logout():
 
 @app.route("/add_walk", methods=["GET", "POST"])
 def add_walk():
-    return render_template("add_walk.html")
+    parks = mongo.db.park.find().sort("park_name", 1)
+    return render_template("add_walk.html", park=parks)
 
 
 if __name__ == "__main__":
