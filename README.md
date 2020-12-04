@@ -17,7 +17,7 @@ My project allows users to discover new walks within the UK, inspiring them to g
 The website is colourful and engaging, drawing the user in with bright, bold images and standout text, which I hope entices them
 to get planning thier next walking route.
 
-A link to my website can be found [here](https://gwen-bradbury.github.io/MS3/
+A link to my website can be found [here](https://gwen-bradbury.github.io/MS3/) or [here](https://ms3-walkapp.herokuapp.com/)
 
 ## UX
 
@@ -61,7 +61,15 @@ https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
 
 And matched this as best I could to the CCS colors on Materialize, which I used throughout my project.
 
-I used 
+I used ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
+I used ![#fff](https://placehold.it/15/14213D/000000?text=+) #fff (white) as my text color as it stood out clearly against the dark background.
+![#fce4ec](https://placehold.it/15/14213D/000000?text=+) #fce4ec (Materialize shade: pink lighten-5) as a background color to the flash messages, with ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
+as the flash message text color.
+![#fff](https://placehold.it/15/14213D/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
+to give it some separation from the main page.
+
+All my colors were chosen for thier relaxing and calming shades, in keeping with the tone of the app. The National Parks are nature at it's most beautiful and being within them and finding peace within them, allows you the time
+to relax and rejuvenate, with the added benefit of exercising by walking. 
 
 #### Font-
 
