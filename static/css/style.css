@@ -11,3 +11,18 @@ body {
     height: 60vh;
     width: 100%;
 }
+
+.card-image img {
+    height: 25vh;
+    width: 100%;
+}
+
+.card-content {
+    overflow: scroll;
+    height: 30vh;
+    width: 100%;
+}
+
+.collapsible-body {
+    background-color: #fff;
+}

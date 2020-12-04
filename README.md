@@ -150,7 +150,8 @@ https://www.w3.org/Style/CSS/Overview.en.html
 ### Libraries-
 
 1. https://materializecss.com/ - navbar
-
+                               - cards - 'My Walks' page
+                               - forms  
 ### API's-
 
 ### Tools-
@@ -170,6 +171,12 @@ https://www.w3.org/Style/CSS/Overview.en.html
 ## Credits
 
 ### Content-
+
+1. https://www.peakdistrict.gov.uk/
+
+2. https://www.lakedistrict.gov.uk/
+
+3. https://www.snowdonia.gov.wales/
 
 ### Media-
 
