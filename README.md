@@ -49,8 +49,8 @@ The 'Home' page is the first page you see when visiting the app. It lists the Na
 Both the 'Add A Walk' and 'Add A Park' pages allow users to add National Parks, and Walks within them, to the database using a simple form. These added parks and walks are then listed on the 'Home' and 'My Walks' pages. 
 The last link in the navbar allows users to exit or 'Log Out' of the app.
 I made navigation through the website easy with a navbar and search box located on the 'Home' page.
-4. _Skeleton Plane_ -
-5. _Surface Plane_ -
+4. _Skeleton Plane_ - As mentioned in the Structure Plane, I decided to use a navbar and search bar as the main source of navigation through the app. This allows the user to move thoughout the app at a pace that suits them, in the easiest way possible. Returning users can find the page they're looking for, using the navbar, without having to scroll through lots of information they've already seen on previous visits, and use the search bar to search for the walks and parks that they're most interested in. The 'My Walks' page link in the navbar will also allow the user to locate all the parks and walks they've added without scrolling through the database on the 'Home' page.
+5. _Surface Plane_ - 
 
 - For my design to work, I knew that it would be important to create a theme that would keep the user interested. My first design decision was therefore to make the website as bright and colourful with images from the three National Parks I'm focusing on, to gain and keep thier attention.
 - With this in mind, I began experimenting with my wireframes. I found it useful to generate a color scheme using coolors, which provided me with contrasting colours for my website and found images that complemented that colour scheme. I used figma to make mock ups of my websites pages.
