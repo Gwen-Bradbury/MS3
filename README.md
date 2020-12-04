@@ -42,9 +42,13 @@ I have produced a mock up of all of my app's pages.
 #### Design Process-
 
 1. _Strategy Plane_ - From the onset I knew that my primary aim was to encourage people who enjoy walking to explore different UK National Parks in a way that was engaging and simple, therefore stimulating them to get back outdoors and into the countryside. My main focus thoughout this project has been to excute this aim. I started the UX process by making a list of user stories, which allowed me to visualise what would be necessary to satisy them.
-2. _Scope Plane_ - Having decided the main aim for the project, I began outlining the key features that I wanted my website to have.
-To do so, I focused on the Python and Javascript I would need to implement, as I knew this would be crucial to the aim of making the website interactive. This led me to decide that I wanted to focus on two key features: a registration form and login page, and a page for users to add walks to a list, with the added option to delete walks they've added if needed.
-3. _Structure Plane_ - Once I had narrowed down the features I wanted to include, I formulated the structure of my design into 6 seperate pages:
+2. _Scope Plane_ - Having decided the main aim for the project, I began outlining the key features that I wanted my app to have.
+To do so, I focused on the Python and Javascript I would need to implement, as I knew this would be crucial to the aim of making the app interactive. This led me to decide that I wanted to focus on two key features: a registration form and login page, and a page for users to add walks to a list, with the added option to delete walks they've added if needed.
+3. _Structure Plane_ - Once I had narrowed down the features I wanted to include, I formulated the structure of my design into 7 seperate pages: The landing or 'Home' page, 'Login', 'Register', 'My Walks', 'Add Walk' and 'Add Park'.
+The 'Home' page is the first page you see when visiting the app. It lists the National Parks and Walks within them. It also has links to the 'Login' and 'Register' pages. Both the previously mentioned pages contain forms with fields requiring a username and password in order to gain access to the rest of the site. Upon registering or logging in you get taken to the 'My Walks' page. This page lists all the walks that that user has added. The navbar links also navigate the user back to the 'Home' page, the 'Add A Walk' and the 'Add A Park' pages.
+Both the 'Add A Walk' and 'Add A Park' pages allow users to add National Parks, and Walks within them, to the database using a simple form. These added parks and walks are then listed on the 'Home' and 'My Walks' pages. 
+The last link in the navbar allows users to exit or 'Log Out' of the app.
+I made navigation through the website easy with a navbar and search box located on the 'Home' page.
 4. _Skeleton Plane_ -
 5. _Surface Plane_ -
 
