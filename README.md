@@ -78,6 +78,8 @@ to relax and rejuvenate, with the added benefit of exercising by walking.
 
 #### Font-
 
+I used a line height of 3 on my flash messages to make them stand out more and grab the users attention.
+
 ## User Stories
 
 ### As a Site User - 
