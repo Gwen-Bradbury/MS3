@@ -114,6 +114,12 @@ def add_walk():
     return render_template("add_walk.html", park=parks)
 
 
+@app.route("/get_parks")
+def get_parks():
+    parks = list(mongo.db.parks.find().sort("park_name", 1))
+    return render_template("parks.html", parks=parks)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

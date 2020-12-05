@@ -11,4 +11,26 @@
         </div>
     </div>
 
+    <ul class="collapsible popout blue-grey-text text-darken-3">
+        <li>
+            <div class="collapsible-header">
+                <div class="col s3">
+                    <i class="fas fa-caret-down"></i>
+                    <a href="" class="btn-small green accent-2 blue-grey-text text-darken-3">
+                        Delete from My Walks
+                    </a>
+                </div>
+                <div class="col s9">
+                    <strong>{{ walk_name }}</strong>
+                </div>
+            </div>
+            <div class="collapsible-body blue-grey-text text-darken-3">
+                <strong>{{ park_name }}</strong>
+                <p>{{ walk_description }}</p>
+                <p>{{ walk_length }}</p>
+                <p><em>by: {{ created_by }}</em></p>
+            </div>
+        </li>
+    </ul>
+
 {% endblock %}
