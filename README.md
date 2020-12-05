@@ -68,7 +68,7 @@ And matched this as best I could to the CCS colors on Materialize, which I used 
 
 I used ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
 I used ![#fff](https://placehold.it/15/14213D/000000?text=+) #fff (white) as my text color as it stood out clearly against the dark background.
-![#fce4ec](https://placehold.it/15/14213D/000000?text=+) #fce4ec (Materialize shade: pink lighten-5) as a background color to the flash messages, with ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
+![#eceff1](https://placehold.it/15/14213D/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) as a background color to the flash messages, with ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
 as the flash message text color.
 ![#fff](https://placehold.it/15/14213D/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
 to give it some separation from the main page.

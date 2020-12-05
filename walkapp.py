@@ -99,6 +99,17 @@ def logout():
 
 @app.route("/add_walk", methods=["GET", "POST"])
 def add_walk():
+    if request.method == "POST":
+        walk = {
+            "park_name": request.form.get("park_name"),
+            "walk_name": request.form.get("walk_name"),
+            "walk_description": request.form.get("walk_description"),
+            "walk_length": request.form.get("walk_length"),
+            "created_by": session["user"]
+        }
+        mongo.db.walks.insert_one(walk)
+        flash("Walk Successfully Added!")
+        return redirect(url_for("get_walks"))
     parks = mongo.db.park.find().sort("park_name", 1)
     return render_template("add_walk.html", park=parks)
 
