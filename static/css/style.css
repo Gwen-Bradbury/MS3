@@ -31,3 +31,14 @@ body {
 .collapsible-body {
     background-color: #fff;
 }
+
+/* Buttons */
+.btn-small {
+    margin: 5px;
+}
+
+/* Accordion Header */
+.collapsible-header .col strong {
+    margin: 5px;
+    line-height: 42px;
+}

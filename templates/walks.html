@@ -69,8 +69,15 @@
         {% for walk in walks %}
         <li>
             <div class="collapsible-header">
-                <i class="fas fa-caret-down"></i>
-                <strong>{{ walk.walk_name }}</strong>
+                <div class="col s3">
+                    <i class="fas fa-caret-down"></i>
+                    <a href="" class="btn-small green accent-2 blue-grey-text text-darken-3">
+                        Add to My Walks
+                    </a>
+                </div>
+                <div class="col s9">
+                    <strong>{{ walk.walk_name }}</strong>
+                </div>
             </div>
             <div class="collapsible-body blue-grey-text text-darken-3">
                 <strong>{{ walk.park_name }}</strong>
