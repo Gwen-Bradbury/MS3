@@ -121,6 +121,21 @@ def get_park():
     return render_template("parks.html", park=park)
 
 
+@app.route("/add_park", methods=["GET", "POST"])
+def add_park():
+    if request.method == "POST":
+        park = {
+            "park_name": request.form.get("park_name"),
+            "park_image": request.form.get("park_image"),
+            "park_description": request.form.get("park_description")
+        }
+        mongo.db.park.insert_one(park)
+        flash("Park Successfully Added!")
+        return redirect(url_for("get_park"))
+
+    return render_template("parks.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
