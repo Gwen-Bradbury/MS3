@@ -21,14 +21,16 @@
         <!-- Main Navbar -->
 		<nav class="nav-extended blue-grey darken-3">
 			<div class="nav-wrapper">
-				<a href="{{ url_for('get_walks') }}" class="brand-logo">UK Walks</a>
+				<a href="{{ url_for('get_walks_parks') }}" class="brand-logo">UK Walks</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="{{ url_for('get_walks') }}">Home</a></li>
+					<li><a href="{{ url_for('get_walks_parks') }}">Home</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('mywalks', username=session['user']) }}">My Walks</a></li>
                         <li><a href="{{ url_for('add_walk') }}">Add A Walk</a></li>
-                        <li><a href="{{ url_for('get_parks') }}">Add A Park</a></li>
+                        {% if session.user|lower == "admin"|lower %}
+                            <li><a href="{{ url_for('get_park') }}">Manage Parks</a></li>
+                        {% endif %}
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Login</a></li>
@@ -40,11 +42,13 @@
         <!-- Moblie Navbar -->
 		<ul class="sidenav blue-grey-text text-darken-3" id="mobile-demo">
             <li><h4 class="center-align">UK Walks</h4></li>
-			<li><a href="{{ url_for('get_walks') }}">Home</a></li>
+			<li><a href="{{ url_for('get_walks_parks') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('mywalks', username=session['user']) }}">My Walks</a></li>
                 <li><a href="{{ url_for('add_walk') }}">Add A Walk</a></li>
-                <li><a href="{{ url_for('get_parks') }}">Add A Park</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('get_park') }}">Manage Parks</a></li>
+                {% endif %}
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Login</a></li>

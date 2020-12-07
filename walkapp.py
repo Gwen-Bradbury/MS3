@@ -19,10 +19,11 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_walks")
-def get_walks():
+@app.route("/get_walks_parks")
+def get_walks_parks():
+    park = list(mongo.db.park.find().sort("park_name", 1))
     walks = list(mongo.db.walks.find())
-    return render_template("walks.html", walks=walks)
+    return render_template("walks.html", walks=walks, park=park)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -110,14 +111,14 @@ def add_walk():
         mongo.db.walks.insert_one(walk)
         flash("Walk Successfully Added!")
         return redirect(url_for("get_walks"))
-    parks = mongo.db.park.find().sort("park_name", 1)
-    return render_template("add_walk.html", park=parks)
+    park = mongo.db.park.find().sort("park_name", 1)
+    return render_template("add_walk.html", park=park)
 
 
-@app.route("/get_parks")
-def get_parks():
-    parks = list(mongo.db.parks.find().sort("park_name", 1))
-    return render_template("parks.html", parks=parks)
+@app.route("/get_park")
+def get_park():
+    park = list(mongo.db.park.find().sort("park_name", 1))
+    return render_template("parks.html", park=park)
 
 
 if __name__ == "__main__":

@@ -3,50 +3,24 @@
 
     <!-- Park Cards -->
     <h3 class="center-align">All Parks</h3>
-    <!-- Peak District -->
+
     <div class="row">
-        <div class="col s12 m6">
-            <div class="card">
-                <div class="card-image">
-                    <img src="/static/images/peakdistrict.jpg">
-                    <span class="card-title">Peak Distric National Park</span>
-                </div>
-                <div class="card-content blue-grey-text text-darken-3">
-                    <p>The Peak District National Park is the UK’s original national park.
-                        The Peak District National Park has three main landscapes,
-                        the Dark Peak, White Peak and South West Peak. Each has it's own character and sense of place. 
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- Lake District -->
-        <div class="col s12 m6">
-            <div class="card">
-                <div class="card-image">
-                    <img src="/static/images/lakedistrict.jpg">
-                    <span class="card-title">Lake District National Park</span>
-                </div>
-                <div class="card-content blue-grey-text text-darken-3">
-                    <p>The Lake District National Park is England's largest National Park.
-                        It is home to 10 mountains, 16 lakes, hidden tarns and around 28,500 hectares of woodland.
-                    </p>
+        {% for park in park %}
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ park.park_image }}">
+                        <span class="card-title">{{ park.park_name }}</span>
+                    </div>
+                    <div class="card-content blue-grey-text text-darken-3">
+                        <p>{{ park.park_description }}
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Snowdonia -->
-        <div class="col s12 m6">
-            <div class="card">
-                <div class="card-image">
-                    <img src="/static/images/snowdonia.jpg">
-                    <span class="card-title">Snowdonia National Park</span>
-                </div>
-                <div class="card-content blue-grey-text text-darken-3">
-                    <p>Situated on the west coast of Britain covering 823 square miles of diverse landscapes, Snowdonia National Park
-                        boasts the highest mountain in England and Wales, and the largest natural lake in Wales.
-                    </p>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
+    </div>
+    
         <!-- Dartmoor -->
         <div class="col s12 m6">
             <div class="card">
@@ -61,7 +35,6 @@
                 </div>
             </div>
         </div>
-    </div>
     <!-- Walks -->
     <h3 class="center-align">All Walks</h3>
 
