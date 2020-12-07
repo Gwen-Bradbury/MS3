@@ -15,10 +15,10 @@
                             <p>{{ park.park_description }}</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" class="btn-small green accent-2 blue-grey-text text-darken-3">
+                            <a href="{{ url_for('edit_park', park_id=park._id) }}" class="btn-small green accent-2 blue-grey-text text-darken-3">
                                 Edit Park
                             </a>
-                            <a href="#" class="btn-small green accent-2 blue-grey-text text-darken-3">
+                            <a href="#" class="btn-small blue-grey-text text-lighten-5 blue-grey darken-3">
                                 Delete Park 
                             </a>
                         </div>
@@ -45,8 +45,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix"></i>
-                    <textarea id="park_image" name="park_image" minlength="5" 
-                        class="materialize-textarea validate" required></textarea>
+                    <input id="park_image" name="park_image" minlength="5" type="text"
+                       value="{{ park.park_image }}" class="materialize-textarea validate" required>
                     <label for="park_image">Park Image</label>
                 </div>
             </div>
@@ -62,7 +62,7 @@
             <!-- Add Park Button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="btn-large blue-grey-text text-lighten-5 blue-grey darken-3">
+                    <button type="submit" class="btn-large green accent-2 blue-grey-text text-darken-3">
                         Add Park
                     </button>
                 </div>

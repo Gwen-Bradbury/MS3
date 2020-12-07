@@ -136,6 +136,21 @@ def add_park():
     return render_template("parks.html")
 
 
+@app.route("/edit_park/<park_id>", methods=["GET", "POST"])
+def edit_park(park_id):
+    if request.method == "POST":
+        submit = {
+            "park_name": request.form.get("park_name"),
+            "park_image": request.form.get("park_image"),
+            "park_description": request.form.get("park_description")
+        }
+        mongo.db.park.update({"_id": ObjectId(park_id)}, submit)
+        flash("Park Successfully Updated!")
+        return redirect(url_for("get_park"))
+    park = mongo.db.park.find_one({"_id": ObjectId(park_id)})
+    return render_template("edit_park.html", park=park)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
