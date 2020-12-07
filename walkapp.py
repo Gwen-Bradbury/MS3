@@ -26,6 +26,13 @@ def get_walks_parks():
     return render_template("walks.html", walks=walks, park=park)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    search = request.form.get("search")
+    walks = list(mongo.db.walks.find({"$text": {"$search": search}}))
+    return render_template("walks.html", walks=walks)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -110,7 +117,7 @@ def add_walk():
         }
         mongo.db.walks.insert_one(walk)
         flash("Walk Successfully Added!")
-        return redirect(url_for("get_walks"))
+        return redirect(url_for("get_walks_parks"))
     park = mongo.db.park.find().sort("park_name", 1)
     return render_template("add_walk.html", park=park)
 
