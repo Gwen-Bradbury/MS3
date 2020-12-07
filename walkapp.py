@@ -151,6 +151,13 @@ def edit_park(park_id):
     return render_template("edit_park.html", park=park)
 
 
+@app.route("/delete_park/<park_id>")
+def delete_park(park_id):
+    mongo.db.park.remove({"_id": ObjectId(park_id)})
+    flash("Park Successfully Deleted!")
+    return redirect(url_for("get_park"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
