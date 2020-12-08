@@ -2,7 +2,7 @@
 {% block content %}
 
     <h3 class="center-align">Manage Parks</h3>
-
+        <!-- Park Cards -->
         <div class="row">
             {% for park in park %}
                 <div class="col s12 m6">
@@ -28,7 +28,7 @@
         </div>
 
         <h3 class="center-align">Add A Park</h3>
-
+        <!-- Add a Park -->
         <div class="row card-panel blue-grey-text text-darken-3">
         <form class="col s12" method="POST" action="{{ url_for('add_park') }}">
             

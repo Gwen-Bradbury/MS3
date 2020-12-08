@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <!-- Usernames Name-->
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card-panel blue-grey-text text-darken-3">
@@ -10,21 +11,21 @@
             </div>
         </div>
     </div>
-
-    <ul class="collapsible popout blue-grey-text text-darken-3">
+    <!-- Accordion of Usernames Added Walks -->
+    <ul class="collapsible popout center-align blue-grey-text text-darken-3">
         <li>
             <div class="collapsible-header">
-                <div class="col s3">
+                <div class="col s12 m6">
                     <i class="fas fa-caret-down"></i>
+                    <strong>{{ walk_name }}</strong>
+                </div>
+                <div class="col s12 m6">
                     <a href="" class="btn-small green accent-2 blue-grey-text text-darken-3">
                         Edit Walk
                     </a>
                     <a href="" class="btn-small green accent-2 blue-grey-text text-darken-3">
                         Delete
                     </a>
-                </div>
-                <div class="col s9">
-                    <strong>{{ walk_name }}</strong>
                 </div>
             </div>
             <div class="collapsible-body blue-grey-text text-darken-3">

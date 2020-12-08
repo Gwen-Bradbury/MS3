@@ -18,6 +18,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# Get Walks and Parks
 @app.route("/")
 @app.route("/get_walks_parks")
 def get_walks_parks():
@@ -26,6 +27,7 @@ def get_walks_parks():
     return render_template("walks.html", walks=walks, park=park)
 
 
+# search Bar
 @app.route("/search", methods=["GET", "POST"])
 def search():
     search = request.form.get("search")
@@ -33,6 +35,7 @@ def search():
     return render_template("walks.html", walks=walks)
 
 
+# Register Account
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -57,6 +60,7 @@ def register():
     return render_template("register.html")
 
 
+# Log In
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -85,6 +89,7 @@ def login():
     return render_template("login.html")
 
 
+# Get Users Username
 @app.route("/mywalks/<username>", methods=["GET", "POST"])
 def mywalks(username):
     # Get session users username from DB
@@ -97,6 +102,7 @@ def mywalks(username):
     return redirect(url_for("login"))
 
 
+# Log Out
 @app.route("/logout")
 def logout():
     # Remove user from session cookies
@@ -105,6 +111,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Add Walk to DB
 @app.route("/add_walk", methods=["GET", "POST"])
 def add_walk():
     if request.method == "POST":
@@ -122,12 +129,14 @@ def add_walk():
     return render_template("add_walk.html", park=park)
 
 
+# Get Parks
 @app.route("/get_park")
 def get_park():
     park = list(mongo.db.park.find().sort("park_name", 1))
     return render_template("parks.html", park=park)
 
 
+# Add Park to DB
 @app.route("/add_park", methods=["GET", "POST"])
 def add_park():
     if request.method == "POST":
@@ -143,6 +152,7 @@ def add_park():
     return render_template("parks.html")
 
 
+# Edit Parks
 @app.route("/edit_park/<park_id>", methods=["GET", "POST"])
 def edit_park(park_id):
     if request.method == "POST":
@@ -158,6 +168,7 @@ def edit_park(park_id):
     return render_template("edit_park.html", park=park)
 
 
+# Delete Parks
 @app.route("/delete_park/<park_id>")
 def delete_park(park_id):
     mongo.db.park.remove({"_id": ObjectId(park_id)})
