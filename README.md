@@ -74,11 +74,11 @@ https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
 
 And matched this as best I could to the CCS colors on Materialize, which I used throughout my project.
 
-I used ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
-I used ![#fff](https://placehold.it/15/14213D/000000?text=+) #fff (white) as my text color as it stood out clearly against the dark background.
-![#eceff1](https://placehold.it/15/14213D/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) as a background color to the flash messages, with ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
+I used ![#37474F](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
+I used ![#FFF](https://placehold.it/15/14213D/000000?text=+) #fff (white) as my text color as it stood out clearly against the dark background.
+![#ECEFF1](https://placehold.it/15/14213D/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) as a background color to the flash messages, with ![#37474F](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
 as the flash message text color.
-![#fff](https://placehold.it/15/14213D/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474f](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
+![#FFF](https://placehold.it/15/14213D/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474F](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
 to give it some separation from the main page.
 
 All my colors were chosen for thier relaxing and calming shades, in keeping with the tone of the app. The National Parks are nature at it's most beautiful and being within them and finding peace within them, allows you the time
@@ -131,11 +131,15 @@ develop this app, as well as technologies such as Materialize for responsiveness
 
 -_Headline Image_-
 
+-_Search Bar_-
+
 -_List of Parks_-
 
 -_List of Walks_-
 
 -_Add to My Walks button_-
+
+-_Dropdown_-
 
 Navbar is repeated across all pages to provide consistant navigation throughout the app.
 
@@ -157,6 +161,8 @@ Headline Image is repeated across all pages to provide consistancy within app.
 
 -_Form to Add Walks to DB_-
 
+-_Cancel Button_-
+
 #### Features on the Manage Parks Page -
 
 -_List of Parks_-
@@ -165,7 +171,13 @@ Headline Image is repeated across all pages to provide consistancy within app.
 
 -_Delete button_-
 
+-_Add a Park Form_-
+
+-_Cancel Button_-
+
 #### Features on the Users Walks Page -
+
+-_Users Username_-
 
 -_List of added Walks_-
 
@@ -179,7 +191,7 @@ Headline Image is repeated across all pages to provide consistancy within app.
 
 -_More Walks_-
 
--_Language button_-
+-_Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
 
 ### Bugs and Fixes Implemented after Testing -
 
@@ -195,13 +207,13 @@ https://developer.mozilla.org/en-US/docs/Web/HTML
 2. **CSS, or Cascading Style Sheets:** Used to style the various elements on the app's pages via coloring, fonts, spacing, etc. For further info, see this link;
 https://www.w3.org/Style/CSS/Overview.en.html
 
-3. **Javascript:** A programming language used 
+3. **Javascript:** A programming language 
 
-4. **JQuery:** A programming language used 
+4. **JQuery:** A programming language
 
-5. **Python3:** A programming language used 
+5. **Python3:** A programming language 
 
-6. **Jinja:** A programming language used 
+6. **Jinja:** A programming language 
 
 7. **Bson:**  A computer data interchange format 
 
@@ -217,7 +229,7 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 ### API's - 
 
-1. **Flask:** Web framework used for developing applications
+1. **Flask:** Web framework for developing applications
 
 ### Databases -
 
@@ -352,28 +364,40 @@ For more information about the above process; https://help.github.com/en/github/
 
 ### Content -
 
-1. https://www.peakdistrict.gov.uk/
+1. Information on Parks and Walks -
 
-2. https://www.lakedistrict.gov.uk/
+    -https://www.peakdistrict.gov.uk/
+    -https://www.lakedistrict.gov.uk/
+    -https://www.snowdonia.gov.wales/
+    -https://www.visitdartmoor.co.uk/
 
-3. https://www.snowdonia.gov.wales/
+2. Materialize - https://materializecss.com/ - 
 
-4. https://www.visitdartmoor.co.uk/
+    -Navbar 
+    -Cards 
+    -Forms 
 
-5. Materialize - navbar - cards - 'My Walks' page/ 'Home' page/ 'Manage Parks' page - forms  
+3. Wireframes - https://www.figma.com/file/r6CISvX0N6sXBacS11lnIs/MS3
+
+4. Colour Scheme - https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
 
 ### Media -
 
-1. unsplash.com
+1. Images -
 
-2. https://www.lakedistrict.gov.uk/
+    -https://www.unsplash.com
+    -https://www.peakdistrict.gov.uk/
+    -https://www.lakedistrict.gov.uk/
+    -https://www.snowdonia.gov.wales/
+    -https://www.visitdartmoor.co.uk/
 
-3. https://www.snowdonia.gov.wales/
+2. Contents table in README.md - http://ecotrust-canada.github.io/markdown-toc/
 
-4. https://www.visitdartmoor.co.uk/
+3. Am I Responsive web site for checking responsiveness on all Apple devices screen sizes - http://ami.responsivedesign.is/
 
-5. https://www.peakdistrict.gov.uk/
+4. Code Institues tutorial videos - https://codeinstitute.net/
 
+5. Font Awesome Icons on buttons - https://fontawesome.com/
 
 ### Acknowledgements -
 
