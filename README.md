@@ -31,7 +31,7 @@ The app is fully functional and interactive giving the user a positive experienc
 I focused on a design that would be engaging and easy to navigate so users will continue to repeatedly visit and make use of the
 features implimented within the app.
 
-### Wireframes-
+### Wireframes -
 
 I have produced a mock up of all of my app's pages.
 
@@ -39,20 +39,24 @@ I have produced a mock up of all of my app's pages.
 
 ### Design
 
-#### Design Process-
+#### Design Process -
 
 1. _Strategy Plane_ - From the onset I knew that my primary aim was to encourage people who enjoy walking to explore different UK National Parks in a way that was engaging and simple, 
 therefore stimulating them to get back outdoors and into the countryside. My main focus thoughout this project has been to excute this aim. I started the UX process by making a list of user stories, which allowed me to visualise what would be necessary to satisy them.
+
 2. _Scope Plane_ - Having decided the main aim for the project, I began outlining the key features that I wanted my app to have.
 To do so, I focused on the Python and Javascript I would need to implement, as I knew this would be crucial to the aim of making the app interactive. This led me to decide that I wanted to focus on two key features: a registration form and login page, and a page for users to add walks to a list, with the added option to delete walks they've added if needed.
+
 3. _Structure Plane_ - Once I had narrowed down the features I wanted to include, I formulated the structure of my design into 7 seperate pages: The landing or 'Home' page, 'Login', 'Register', 'My Walks', 'Add Walk' and 'Add Park'.
 The 'Home' page is the first page you see when visiting the app. It lists the National Parks and Walks within them. It also has links to the 'Login' and 'Register' pages. Both the previously mentioned pages contain forms with fields requiring a username and password in order to gain access to the rest of the site. Upon registering or logging in you get taken to the 'My Walks' page. 
 This page lists all the walks that that user has added into it. The navbar links also navigate the user back to the 'Home' page, the 'Add A Walk' and, for the admin, the 'Add A Park' pages.
 Both the 'Add A Walk' page allow users to add Walks, to the database using a simple form. The admin also has access to the 'Manage Parks' page which allows them to Edt, Add and Delete parks. These added parks and walks are then listed on the 'Home' page with the walks also listed on the 'My Walks' page. 
 The last link in the navbar allows users to exit or 'Log Out' of the app.
 I made navigation through the website easy with a navbar and search box located on the 'Home' page.
+
 4. _Skeleton Plane_ - As mentioned in the Structure Plane, I decided to use a navbar and search bar as the main source of navigation through the app. This allows the user to move thoughout the app at a pace that suits them, in the easiest way possible. Returning users can find the page they're looking for, using the navbar, without having to scroll through lots of information they've already seen on previous visits, 
 and can use the search bar to search for the walks and parks that they're most interested in. The 'My Walks' page link in the navbar will also allow the user to locate all the parks and walks they've added to it, without scrolling through the database on the 'Home' page.
+
 5. _Surface Plane_ - 
 
 - For my design to work, I knew that it would be important to create a theme that would keep the user interested. My first design decision was therefore to make the app as bright and colourful with images from the three National Parks I'm focusing on, to gain and keep thier attention.
@@ -61,7 +65,7 @@ and can use the search bar to search for the walks and parks that they're most i
 
 > Note: Throughout the design process, I kept referring back to my original 'Main Aims' and 'User Stories' to make sure that my project was developing as intended.
 
-#### Colour Pallette-
+#### Colour Pallette -
 
 I used coolors to generate my colour scheme-
 
@@ -79,7 +83,7 @@ to give it some separation from the main page.
 All my colors were chosen for thier relaxing and calming shades, in keeping with the tone of the app. The National Parks are nature at it's most beautiful and being within them and finding peace within them, allows you the time
 to relax and rejuvenate, with the added benefit of exercising by walking. 
 
-#### Font-
+#### Font -
 
 I used a line height of 3 on my flash messages to make them stand out more and grab the users attention.
 
@@ -99,14 +103,14 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 - As a user, I want the the app to be easy to use and navigate.
 
-### As a Designer-
+### As a Designer -
 
 - As a web designer and developer, I want to track the user behaviour so that I can improve the user experience. I want to track the user behaviour so that I can identify the possible user confusion over navigating the app.
 I want feed back from the users on what features are being used most frequently and ideas on other interesting walks.
 
 - As a web designer and developer, I want the app to be interactive and give real time feedback when a user executes an action.
 
-### As an Employer-
+### As an Employer -
 
 - As an employer/recruiter, I need to see and review the skills and work capabilities, and analyze if you have the skills we require. In this website I've used many user-friendly features to showcase my skills as a developer.
 From the layout and colour scheme to the interactivity, every implemented piece of code has been built to make the site as appealing and easy to use for customers as possible.
@@ -118,7 +122,7 @@ develop this app, as well as technologies such as Materialize for responsiveness
 
 ## Features
 
-### Exsisting Features-
+### Exsisting Features -
 
 #### Features on the Home Page -
 
@@ -136,23 +140,23 @@ Navbar is repeated across all pages to provide consistant navigation throughout 
 
 Headline Image is repeated across all pages to provide consistancy within app.
 
-#### Features on the Login Page-
+#### Features on the Login Page -
 
 -_Login Form_-
 
 -_Link to Register Account page_-
 
-#### Features on the Register Page-
+#### Features on the Register Page -
 
 -_Register Account form_-
 
 -_Link to Login page_-
 
-#### Features on the Add a Walk Page-
+#### Features on the Add a Walk Page -
 
 -_Form to Add Walks to DB_-
 
-#### Features on the Manage Parks Page-
+#### Features on the Manage Parks Page -
 
 -_List of Parks_-
 
@@ -160,7 +164,7 @@ Headline Image is repeated across all pages to provide consistancy within app.
 
 -_Delete button_-
 
-#### Features on the Users Walks Page-
+#### Features on the Users Walks Page -
 
 -_List of added Walks_-
 
@@ -182,7 +186,7 @@ Headline Image is repeated across all pages to provide consistancy within app.
 
 ## Technologies Used
 
-### Languages-
+### Languages -
 
 1. **HTML, or Hyper Text Markup Language:** Used to construct the page withn this app. For further info on this language, see this link;  
 https://developer.mozilla.org/en-US/docs/Web/HTML
@@ -198,15 +202,15 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 6. **Jinja:**
 
-### Libraries-
+### Libraries -
 
 1. **Materialize:** A CSS framework that assists the programmer in creating responsive, mobile first front-end web sites. https://materializecss.com/ 
                                - navbar
                                - cards - 'My Walks' page/ 'Home' page/ 'Manage Parks' page
                                - forms  
-### API's-
+### Databases -
 
-### Tools-
+### Tools -
 
 1. **Gitpod:** An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC.
    https://www.gitpod.io/
@@ -226,13 +230,13 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 ## Testing
 
-### Validation of Code Testing-
+### Validation of Code Testing -
 
 ## Deployment
 
-This website was developed in Gitpod and pushed to the remote repositories, GitHub and Heroku.
+This website was developed in Gitpod and pushed to the remote repositories, GitHub and Heroku. The live page is hosted on Heroku.
 
-### Heroku
+### Hosting on Heroku -
 
 In order to successfully deploy the app, the following steps were taken:
 
@@ -274,7 +278,7 @@ In order to successfully deploy the app, the following steps were taken:
 
 Successfully deploy the application.
 
-### GitHub
+### Hosting on GitHub pages -
 
 1. Visit GitPod workspace.
 
@@ -309,7 +313,7 @@ Successfully deploy the application.
 
 4. git status - To see the current state of the files.
 
-### Running this Project Locally-
+### Running this Project Locally -
 
 You will need to install the following to run this locally:
 
@@ -332,7 +336,7 @@ For more information about the above process; https://help.github.com/en/github/
 
 ## Credits
 
-### Content-
+### Content -
 
 1. https://www.peakdistrict.gov.uk/
 
@@ -342,7 +346,7 @@ For more information about the above process; https://help.github.com/en/github/
 
 4. https://www.visitdartmoor.co.uk/
 
-### Media-
+### Media -
 
 1. unsplash.com
 
@@ -355,7 +359,16 @@ For more information about the above process; https://help.github.com/en/github/
 5. https://www.peakdistrict.gov.uk/
 
 
-### Acknowledgements-
+### Acknowledgements -
+
+1. My mentor Seun Owonikoko for her help and many other pieces of advice alongside motivation to get me through.
+
+2. My temporary mentor Aaron Sinnott for stepping in whilst Seun was on leave.
+
+3. Code Institute's Slack Channels and the many alunni, mentors, tutors and users who contribute to them; the many pinned announcements, pdf files, etc. were of great help, as was the advice and motivation
+   given by the many members. https://app.slack.com/client/T0L30B202/C0L316Z96
+
+4. The amazing Code Institute Tutors.
 
 ## Disclaimer
 
