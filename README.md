@@ -11,7 +11,7 @@ This is my third milestone project; Designed to exhibit my capabilities and skil
 of Code Institute. (https://codeinstitute.net/)
 The goal was to showcase my skills to potential employers/recruiters, on a topic that I'm deeply interested in.
 My project allows users to discover new walks within the UK, inspiring them to get outside and enjoy the beautiful UK countryside.
-My app contains a landing page, complete with headline image and images of the UK's National Parks, followed by a list of all the walks in the DB.
+My app contains a landing page, complete with headline image and images of the UK's National Parks, followed by a list of all the walks in the DB with a search bar for easy navigation throught these lists.
 There's a login and register page containing required form fields that give you access to the rest of the app, where users can add and delete walks that they've added. There's also a 'My Walks' page that lists all the 
 walks that they've added.
 The last link is a 'Log Out' button that logs users out of the app by removing thier session cookies.
@@ -46,6 +46,7 @@ therefore stimulating them to get back outdoors and into the countryside. My mai
 
 2. _Scope Plane_ - Having decided the main aim for the project, I began outlining the key features that I wanted my app to have.
 To do so, I focused on the Python and Javascript I would need to implement, as I knew this would be crucial to the aim of making the app interactive. This led me to decide that I wanted to focus on two key features: a registration form and login page, and a page for users to add walks to a list, with the added option to delete walks they've added if needed.
+The app would need C R U D functionality with the user having the ability to Create, Read, Update and Delete walks they've added to the app.
 
 3. _Structure Plane_ - Once I had narrowed down the features I wanted to include, I formulated the structure of my design into 7 seperate pages: The landing or 'Home' page, 'Login', 'Register', 'My Walks', 'Add Walk' and 'Add Park'.
 The 'Home' page is the first page you see when visiting the app. It lists the National Parks and Walks within them. It also has links to the 'Login' and 'Register' pages. Both the previously mentioned pages contain forms with fields requiring a username and password in order to gain access to the rest of the site. Upon registering or logging in you get taken to the 'My Walks' page. 
@@ -196,30 +197,42 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 3. **Javascript:** A programming language used 
 
-4. **JQuery:**
+4. **JQuery:** A programming language used 
 
-5. **Python:**
+5. **Python3:** A programming language used 
 
-6. **Jinja:**
+6. **Jinja:** A programming language used 
+
+7. **Bson:**  A computer data interchange format 
 
 ### Libraries -
 
 1. **Materialize:** A CSS framework that assists the programmer in creating responsive, mobile first front-end web sites. https://materializecss.com/ 
-                               - navbar
-                               - cards - 'My Walks' page/ 'Home' page/ 'Manage Parks' page
-                               - forms  
+
+2. **Google Fonts:** A library of free licensed font families
+
+3. **PyMongo:** Allows interaction with MongoDB database through Python
+
+4. **Werkzeug Security:** Provides password security
+
+### API's - 
+
+1. **Flask:** Web framework used for developing applications
+
 ### Databases -
+
+1. **MongoDB:** A document database
 
 ### Tools -
 
-1. **Gitpod:** An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC.
+1. **Gitpod:** An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC
    https://www.gitpod.io/
 
 2. **Git:** A version control system for tracking changes in source code during software development. https://git-scm.com/
 
-3. **Github:** A company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft. https://github.
+3. **Github:** A company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft. https://github
 
-4. **Heroku:**
+4. **Heroku:** An application platform. allowing users to build, run and operate applications
 
 5. **Chrome DevTools:** A set of web developer tools built directly into the Google Chrome browser. I used these tools constantly thoughout the development cycle.
    https://developers.google.com/web/tools/chrome-devtools
@@ -227,10 +240,11 @@ https://www.w3.org/Style/CSS/Overview.en.html
 6. **W3C Markup Validation Service:** Used to run all html and css code through a validation process looking for errors; https://validator.w3.org/
    https://jigsaw.w3.org/css-validator/validator
 
-
 ## Testing
 
 ### Validation of Code Testing -
+
+All of my HTML, CSS and Javascript was run through the validators without returning any errors.
 
 ## Deployment
 
@@ -323,14 +337,14 @@ You will need to install the following to run this locally:
 - MongoDB to develop your own database either locally or remotely on MongoDB Atlas.
 - GIT for cloning and version control
 
-1.  To run this code on your local machine, you would go to my respository at
-    https://github.com/Gwen-Bradbury/MS3 and on the home page on the right hand side just above all the files, you will see a green button that says,
-    "Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file.
-    To continue with cloning, you would;
+1. To run this code on your local machine, you would go to my respository at
+https://github.com/Gwen-Bradbury/MS3 and on the home page on the right hand side just above all the files, you will see a green button that says,
+"Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file.
+To continue with cloning, you would;
 
-    - Open Git Bash
-    - Change the current working directory to the location where you want the cloned directory to be made.
-    - Type git clone, and then paste this URL; https://github.com/Gwen-Bradbury/MS3.git Press Enter. Your local clone will be created.
+- Open Git Bash
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type git clone, and then paste this URL; https://github.com/Gwen-Bradbury/MS3.git Press Enter. Your local clone will be created.
 
 For more information about the above process; https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 
@@ -345,6 +359,8 @@ For more information about the above process; https://help.github.com/en/github/
 3. https://www.snowdonia.gov.wales/
 
 4. https://www.visitdartmoor.co.uk/
+
+5. Materialize - navbar - cards - 'My Walks' page/ 'Home' page/ 'Manage Parks' page - forms  
 
 ### Media -
 
