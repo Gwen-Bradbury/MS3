@@ -187,9 +187,7 @@ Headline Image is repeated across all pages to provide consistancy within app.
 
 ### Features left to Implement -
 
--_More Parks_-
-
--_More Walks_-
+-_More Parks_- Add more Parks for users to add walks into. 
 
 -_Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
 
@@ -201,58 +199,61 @@ Headline Image is repeated across all pages to provide consistancy within app.
 
 ### Languages -
 
-1. **HTML, or Hyper Text Markup Language:** Used to construct the page withn this app. For further info on this language, see this link;  
+1. **HTML, or Hyper Text Markup Language:** Used to construct the page withn this app -   
 https://developer.mozilla.org/en-US/docs/Web/HTML
 
-2. **CSS, or Cascading Style Sheets:** Used to style the various elements on the app's pages via coloring, fonts, spacing, etc. For further info, see this link;
+2. **CSS, or Cascading Style Sheets:** Used to style the various elements on the app's pages via coloring, fonts, spacing, etc. - 
 https://www.w3.org/Style/CSS/Overview.en.html
 
-3. **Javascript:** A programming language 
+3. **Javascript:** A programming language - https://www.javascript.com/
 
-4. **JQuery:** A programming language
+4. **JQuery:** A programming language - https://jquery.com/
 
-5. **Python3:** A programming language 
+5. **Python3:** A programming language - https://www.python.org/download/releases/3.0/
 
-6. **Jinja:** A programming language 
+6. **Jinja:** A programming language - https://jinja.palletsprojects.com/en/2.11.x/
 
-7. **Bson:**  A computer data interchange format 
+7. **Bson:**  A computer data interchange format - https://www.mongodb.com/json-and-bson
 
 ### Libraries -
 
-1. **Materialize:** A CSS framework that assists the programmer in creating responsive, mobile first front-end web sites. https://materializecss.com/ 
+1. **Materialize:** A CSS framework that assists the programmer in creating responsive, mobile first front-end web sites - https://materializecss.com/ 
 
-2. **Google Fonts:** A library of free licensed font families
+2. **Google Fonts:** A library of free licensed font families - https://fonts.google.com/
 
-3. **PyMongo:** Allows interaction with MongoDB database through Python
+3. **PyMongo:** Allows interaction with MongoDB database through Python - https://pymongo.readthedocs.io/en/stable/
 
-4. **Werkzeug Security:** Provides password security
+4. **Werkzeug Security:** Provides password security - https://werkzeug.palletsprojects.com/en/1.0.x/utils/
 
 ### API's - 
 
-1. **Flask:** Web framework for developing applications
+1. **Flask:** Web framework for developing applications - https://flask.palletsprojects.com/en/1.1.x/
 
 ### Databases -
 
-1. **MongoDB:** A document database
+1. **MongoDB:** A document database - https://www.mongodb.com
 
 ### Tools -
 
-1. **Gitpod:** An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC
+1. **Gitpod:** An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC -
    https://www.gitpod.io/
 
-2. **Git:** A version control system for tracking changes in source code during software development. https://git-scm.com/
+2. **Git:** A version control system for tracking changes in source code during software development - https://git-scm.com/
 
-3. **Github:** A company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft. https://github
+3. **Github:** A company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft - https://github
 
-4. **Heroku:** An application platform. allowing users to build, run and operate applications
+4. **Heroku:** An application platform. allowing users to build, run and operate applications - https://www.heroku.com
 
-5. **Chrome DevTools:** A set of web developer tools built directly into the Google Chrome browser. I used these tools constantly thoughout the development cycle.
+5. **Chrome DevTools:** A set of web developer tools built directly into the Google Chrome browser. I used these tools constantly thoughout the development cycle -
    https://developers.google.com/web/tools/chrome-devtools
 
-6. **W3C Markup Validation Service:** Used to run all html and css code through a validation process looking for errors; https://validator.w3.org/
+6. **W3C Markup Validation Service:** Used to run all html and css code through a validation process looking for errors - https://validator.w3.org/
    https://jigsaw.w3.org/css-validator/validator
 
 ## Testing
+
+1.  http://ami.responsivedesign.is/ has been used to see how the site performs on different Apple devices and their viewports, all links, icons performed as expected on all devices. I also used it to create the AppleDevicesView.png at the top of this Readme.
+
 
 ### Validation of Code Testing -
 
