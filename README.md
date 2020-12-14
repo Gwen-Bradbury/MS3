@@ -127,23 +127,25 @@ develop this app, as well as technologies such as Materialize for responsiveness
 
 #### Features on the Home Page -
 
-- _Navbar_ - 
+- _Navbar_ - Holds the name of the page and links that will take the user to the other pages of the site when clicked. 
+It has a dropdown toggle for use on smaller screens. 
+The nav links have an a:hover CSS element that allows the user to see that the cursor is over a nav link and that it can be clicked.
 
--_Headline Image_-
+-_Headline Image_- The image is bright and bold, to catch the users eye, and responsive for smaller screen sizes
 
--_Search Bar_-
+-_Search Bar_- The Search Bar allows easy navigation throught the Parks, and Walks within them, efficiently finding what the user's looking for without endless scrolling.
+Simply type a keyword into the text area hit 'Search' and all the Walks with that keyword will be listed below. If no Walks can be found, the user is faced with a 
+message stating 'No Results Found!' 
 
--_List of Parks_-
+-_List of Parks_- A card containing a picture and information on that particular park.
 
--_List of Walks_-
+-_List of Walks_- A basic accordion containing information such as walk name, with dropdown and 'Add to My Walks' button.
 
--_Add to My Walks button_-
+-_Add to My Walks button_- This button adds that particular walk to the users 'My Walks' page for easy retrival.
 
--_Dropdown_-
+-_Dropdown_- Opens from the accordion and contains further information about that particular walk, such as length and the username that added it to the app.
 
-Navbar is repeated across all pages to provide consistant navigation throughout the app.
-
-Headline Image is repeated across all pages to provide consistancy within app.
+The Navbar is repeated across all pages to provide consistant navigation, along with the Headline Image which provides consistancy and flow within app.
 
 #### Features on the Login Page -
 
