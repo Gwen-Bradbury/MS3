@@ -102,12 +102,6 @@ def mywalks(username):
     return redirect(url_for("login"))
 
 
-@app.route("/get_walks")
-def get_walks():
-    walks = list(mongo.db.walks.find())
-    return redirect(url_for("/mywalks/<username>", walks=walks))
-
-
 # Log Out
 @app.route("/logout")
 def logout():

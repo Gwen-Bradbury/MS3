@@ -37,7 +37,8 @@ I have produced a mock up of all of my app's pages.
 
 ![Wireframe picture](./wireframes/MS3.png)
 
-It was recommended by my mentor to add a google map on the home page. I used the markers on the map to point to the parks locations.
+It was recommended by my mentor to add a google map on the home page. 
+I used the markers on the map to point to the parks locations giving the user an idea into the distance between them and the park they're interested in.
 
 ### Design
 
@@ -55,9 +56,9 @@ The 'Home' page is the first page you see when visiting the app. It lists the Na
 This page lists all the walks that that user has added into it. The navbar links also navigate the user back to the 'Home' page, the 'Add A Walk' and, for the admin, the 'Add A Park' pages.
 Both the 'Add A Walk' page allow users to add Walks, to the database using a simple form. The admin also has access to the 'Manage Parks' page which allows them to Edt, Add and Delete parks. These added parks and walks are then listed on the 'Home' page with the walks also listed on the 'My Walks' page. 
 The last link in the navbar allows users to exit or 'Log Out' of the app.
-I made navigation through the website easy with a navbar and search box located on the 'Home' page.
+I made navigation through the website easy with a fixed navbar and search box located on the 'Home' page.
 
-4. _Skeleton Plane_ - As mentioned in the Structure Plane, I decided to use a navbar and search bar as the main source of navigation through the app. This allows the user to move thoughout the app at a pace that suits them, in the easiest way possible. Returning users can find the page they're looking for, using the navbar, without having to scroll through lots of information they've already seen on previous visits, 
+4. _Skeleton Plane_ - As mentioned in the Structure Plane, I decided to use a fixed navbar and search bar as the main source of navigation through the app. This allows the user to move thoughout the app at a pace that suits them, in the easiest way possible. Returning users can find the page they're looking for, using the navbar, without having to scroll through lots of information they've already seen on previous visits, 
 and can use the search bar to search for the walks and parks that they're most interested in. The 'My Walks' page link in the navbar will also allow the user to locate all the parks and walks they've added to it, without scrolling through the database on the 'Home' page.
 
 5. _Surface Plane_ - 
@@ -76,11 +77,11 @@ https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
 
 And matched this as best I could to the CCS colors on Materialize, which I used throughout my project.
 
-I used ![#37474F](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
-I used ![#FFF](https://placehold.it/15/14213D/000000?text=+) #fff (white) as my text color as it stood out clearly against the dark background.
-![#ECEFF1](https://placehold.it/15/14213D/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) as a background color to the flash messages, with ![#37474F](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
+I used ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
+I used ![#FFF](https://placehold.it/15/FFF/000000?text=+) #fff (white) as my text color as it stood out clearly against the dark background.
+![#ECEFF1](https://placehold.it/15/ECEFF1/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) as a background color to the flash messages, with ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
 as the flash message text color.
-![#FFF](https://placehold.it/15/14213D/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474F](https://placehold.it/15/14213D/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
+![#FFF](https://placehold.it/15/FFF/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474F](https://placehold.it/15/37473F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
 to give it some separation from the main page.
 
 All my colors were chosen for thier relaxing and calming shades, in keeping with the tone of the app. The National Parks are nature at it's most beautiful and being within them and finding peace within them, allows you the time
@@ -151,15 +152,18 @@ The Navbar is repeated across all pages to provide consistant navigation, along 
 
 #### Features on the Login Page -
 
-- _Login Form_- 
+- _Login Form_- A basic form with fields for 'Full Name', 'Username', 'Password', and the 'Log In' button. The form has validation so all fields must be filled out and match certain criteria 
+before the app will accept the users input and allow them access. Flash messages will respond to the users inputs giving them feedback as to the success of them.
 
-- _Link to Register Account page_-
+- _Link to Register Account page_- This link takes users to the 'Register' page where they can create thier user id if they're a first time user.
 
 #### Features on the Register Page -
 
-- _Register Account form_-
+- _Register Account form_- A basic form with fields for 'Full Name', 'Username', 'Password', and the 'Register' button. Users can pick thier own username. The form has validation so all fields must be filled out and match certain criteria 
+before the app will accept the users input and create their id. Flash messages will respond to the users inputs giving them feedback as to the success of them.
 
-- _Link to Login page_-
+- _Link to Login page_- This link takes users to the 'Log In' page. This is for users to login if they've already registered thier account. Filling out the required fields with the correct information will
+take the users to thier 'My Walks' page.
 
 #### Features on the Add a Walk Page -
 
@@ -179,7 +183,7 @@ The Navbar is repeated across all pages to provide consistant navigation, along 
 
 - _Cancel Button_-
 
-#### Features on the Users Walks Page -
+#### Features on the My Walks Page -
 
 - _Users Username_-
 
@@ -188,6 +192,10 @@ The Navbar is repeated across all pages to provide consistant navigation, along 
 - _Edit button_-
 
 - _Delete button_-
+
+#### Features on the Edit Parks Page -
+
+#### Features on the Edit Walks Page -
 
 ### Features left to Implement -
 
