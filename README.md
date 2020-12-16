@@ -140,7 +140,7 @@ The nav links have an a:hover CSS element that allows the user to see that the c
 Simply type a keyword into the text area hit 'Search' and all the Walks with that keyword will be listed below. If no Walks can be found, the user is faced with a 
 message stating 'No Results Found!' 
 
-- _List of Parks_- A card containing a picture and information on that particular park.
+- _List of Parks_- A card containing a picture and information on that particular park. They are visiable two to a row on medium and larger screens and are one below the other on smaller screens and mobiles.
 
 - _List of Walks_- A basic accordion containing information such as walk name, with dropdown and 'Add to My Walks' button.
 
@@ -167,13 +167,16 @@ take the users to thier 'My Walks' page.
 
 #### Features on the Add a Walk Page -
 
-- _Form to Add Walks to DB_-
+- _Form to Add Walks to DB and My Walks pages_- Simple form with a dropdown list of all the available parks, and fields for park name, park description and walk length. The form has validation and character limits 
+that have to be adheared to for the app to accept the users request.
 
-- _Cancel Button_-
+- _Add Walk Button_- This button adds the walk to the DB. The information supplied in the form will be visiable on both the Home and My Walks pages, and can be edited and deleted via buttons on the 'My Walks' page.
+
+- _Cancel Button_- This button cancels the request to add a walk.
 
 #### Features on the Manage Parks Page -
 
-- _List of Parks_-
+- _List of Parks_- 
 
 - _Edit button_-
 
@@ -200,6 +203,8 @@ take the users to thier 'My Walks' page.
 ### Features left to Implement -
 
 - _More Parks_- Add more Parks for users to add walks into. 
+
+- _Contact Us Form_- A form that allows users to email the Admin if they have any problems when using the app. They will get an automatically generated email reply confirming the email has been received.
 
 - _Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
 
