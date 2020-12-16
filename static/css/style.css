@@ -3,6 +3,12 @@ body {
     color: #fff;
 }
 
+/* Navbar */
+nav {
+    position: fixed;
+    z-index: 10;
+}
+
 /* Flash Images */
 .flash-message h4 {
     line-height: 3;

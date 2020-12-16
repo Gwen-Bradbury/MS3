@@ -123,7 +123,7 @@ develop this app, as well as technologies such as Materialize for responsiveness
 
 ## Features
 
-### Exsisting Features -
+### Existing Features -
 
 #### Features on the Home Page -
 
@@ -131,67 +131,67 @@ develop this app, as well as technologies such as Materialize for responsiveness
 It has a dropdown toggle for use on smaller screens. 
 The nav links have an a:hover CSS element that allows the user to see that the cursor is over a nav link and that it can be clicked.
 
--_Headline Image_- The image is bright and bold, to catch the users eye, and responsive for smaller screen sizes
+- _Headline Image_- The image is bright and bold, to catch the users eye, and responsive for smaller screen sizes
 
--_Search Bar_- The Search Bar allows easy navigation throught the Parks, and Walks within them, efficiently finding what the user's looking for without endless scrolling.
+- _Search Bar_- The Search Bar allows easy navigation throught the Parks, and Walks within them, efficiently finding what the user's looking for without endless scrolling.
 Simply type a keyword into the text area hit 'Search' and all the Walks with that keyword will be listed below. If no Walks can be found, the user is faced with a 
 message stating 'No Results Found!' 
 
--_List of Parks_- A card containing a picture and information on that particular park.
+- _List of Parks_- A card containing a picture and information on that particular park.
 
--_List of Walks_- A basic accordion containing information such as walk name, with dropdown and 'Add to My Walks' button.
+- _List of Walks_- A basic accordion containing information such as walk name, with dropdown and 'Add to My Walks' button.
 
--_Add to My Walks button_- This button adds that particular walk to the users 'My Walks' page for easy retrival.
+- _Add to My Walks button_- This button adds that particular walk to the users 'My Walks' page for easy retrival.
 
--_Dropdown_- Opens from the accordion and contains further information about that particular walk, such as length and the username that added it to the app.
+- _Dropdown_- Opens from the accordion and contains further information about that particular walk, such as length and the username that added it to the app.
 
 The Navbar is repeated across all pages to provide consistant navigation, along with the Headline Image which provides consistancy and flow within app.
 
 #### Features on the Login Page -
 
--_Login Form_-
+- _Login Form_- 
 
--_Link to Register Account page_-
+- _Link to Register Account page_-
 
 #### Features on the Register Page -
 
--_Register Account form_-
+- _Register Account form_-
 
--_Link to Login page_-
+- _Link to Login page_-
 
 #### Features on the Add a Walk Page -
 
--_Form to Add Walks to DB_-
+- _Form to Add Walks to DB_-
 
--_Cancel Button_-
+- _Cancel Button_-
 
 #### Features on the Manage Parks Page -
 
--_List of Parks_-
+- _List of Parks_-
 
--_Edit button_-
+- _Edit button_-
 
--_Delete button_-
+- _Delete button_-
 
--_Add a Park Form_-
+- _Add a Park Form_-
 
--_Cancel Button_-
+- _Cancel Button_-
 
 #### Features on the Users Walks Page -
 
--_Users Username_-
+- _Users Username_-
 
--_List of added Walks_-
+- _List of added Walks_-
 
--_Edit button_-
+- _Edit button_-
 
--_Delete button_-
+- _Delete button_-
 
 ### Features left to Implement -
 
--_More Parks_- Add more Parks for users to add walks into. 
+- _More Parks_- Add more Parks for users to add walks into. 
 
--_Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
+- _Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
 
 ### Bugs and Fixes Implemented after Testing -
 
