@@ -37,6 +37,8 @@ I have produced a mock up of all of my app's pages.
 
 ![Wireframe picture](./wireframes/MS3.png)
 
+It was recommended by my mentor to add a google map on the home page. I used the markers on the map to point to the parks locations.
+
 ### Design
 
 #### Design Process -
