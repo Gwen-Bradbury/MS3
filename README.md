@@ -172,7 +172,7 @@ that have to be adheared to for the app to accept the users request.
 
 - _Add Walk Button_- This button adds the walk to the DB. The information supplied in the form will be visiable on both the Home and My Walks pages, and can be edited and deleted via buttons on the 'My Walks' page.
 
-- _Cancel Button_- This button cancels the request to add a walk.
+- _Cancel Button_- This button cancels the request to add a new walk.
 
 #### Features on the Manage Parks Page -
 
@@ -216,11 +216,14 @@ will only delete from the 'My Walks' page.
 
 #### Features on the Edit Walks Page -
 
-- _Edit Walk form_ -
+- _Edit Walk form_ - Simple form with a dropdown list of all the available parks, and fields for park name, park description and walk length. The form has validation and character limits 
+that have to be adheared to for the app to accept the users request.
+The 'Edit' button adds the walk to the DB. The information supplied in the form will be visiable on both the Home and My Walks pages, and can be edited and deleted via buttons on the 'My Walks' page.
+The 'Cancel' button cancels the request to add a new walk.
 
-- _Edit button_ -
+- _Edit button_ - This button adds the walk to the DB. The information supplied in the form will be visiable on both the Home and My Walks pages, and can be edited and deleted via buttons on the 'My Walks' page.
 
-- _Cancel button_ -
+- _Cancel button_ - This button cancels the request to add a new walk.
 
 ### Features left to Implement -
 
