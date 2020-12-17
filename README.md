@@ -39,6 +39,7 @@ I have produced a mock up of all of my app's pages.
 
 It was recommended by my mentor to add a google map on the home page. 
 I used the markers on the map to point to the parks locations giving the user an idea into the distance between them and the park they're interested in.
+She also recommended a back to top button.
 
 ### Design
 

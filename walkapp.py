@@ -23,7 +23,7 @@ mongo = PyMongo(app)
 @app.route("/get_walks_parks")
 def get_walks_parks():
     park = list(mongo.db.park.find().sort("park_name", 1))
-    walks = list(mongo.db.walks.find())
+    walks = list(mongo.db.walks.find().sort("walk_name", 1))
     return render_template("walks.html", walks=walks, park=park)
 
 
@@ -95,7 +95,6 @@ def mywalks(username):
     # Get session users username from DB
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-
     if session["user"]:
         return render_template("mywalks.html", username=username)
 
