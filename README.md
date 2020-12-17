@@ -83,6 +83,10 @@ I used ![#FFF](https://placehold.it/15/FFF/000000?text=+) #fff (white) as my tex
 as the flash message text color.
 ![#FFF](https://placehold.it/15/FFF/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474F](https://placehold.it/15/37473F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
 to give it some separation from the main page.
+All Cancel and Delete buttons have a text color of ![#ECEFF1](https://placehold.it/15/ECEFF1/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) with a background colour of ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474F (Materialize shade: blue-grey darken-3).
+All Edit and Add buttons have a text colour of ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) and a background colour of ![#69F0AE](https://placehold.it/15/69F0AE/000000?text=+) #69F0AE (Materialize shade: green accent-2).
+The back to top button has a background colour of ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) and a background colour of ![#ECEFF1](https://placehold.it/15/ECEFF1/000000?text=+) #ECEFF1 (Materialize shade: blue-grey lighten-5).
+with a hover element that changes the background colour to ![#CFD8DC](https://placehold.it/15/CFD8DC/000000?text=+) #CFD8DC (Materialize shade: blue-grey lighten-4).
 
 All my colors were chosen for thier relaxing and calming shades, in keeping with the tone of the app. The National Parks are nature at it's most beautiful and being within them and finding peace within them, allows you the time
 to relax and rejuvenate, with the added benefit of exercising by walking. 
@@ -233,6 +237,8 @@ The 'Cancel' button cancels the request to add a new walk.
 
 - _Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
 
+- _Map Markers_ - The ability to add another marker pin to the map when a new park is added to the DB.
+
 ### Bugs and Fixes Implemented after Testing -
 
 - _Images_ - Changed headline image as the origional one looked pixelated and streched.
@@ -271,7 +277,7 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 1. **Flask:** Web framework for developing applications - https://flask.palletsprojects.com/en/1.1.x/
 
-2. **Google Maps:** 
+2. **Google Maps:** A set of APIs and SDKs that allows developers to embed Google Maps into mobile apps and web pages, or to retrieve data from Google Maps - https://developers.google.com/maps/documentation/
 
 ### Databases -
 
@@ -422,9 +428,13 @@ For more information about the above process; https://help.github.com/en/github/
     -Cards 
     -Forms 
 
-3. Wireframes - https://www.figma.com/file/r6CISvX0N6sXBacS11lnIs/MS3
+3. w3 Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -
 
-4. Colour Scheme - https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
+    -Back to Top Button
+
+4. Wireframes - https://www.figma.com/file/r6CISvX0N6sXBacS11lnIs/MS3
+
+5. Colour Scheme - https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
 
 ### Media -
 
