@@ -207,7 +207,20 @@ will only delete from the 'My Walks' page.
 
 #### Features on the Edit Parks Page -
 
+- _Edit Park form_ - A simple form with fields for 'Park Name', 'Park Image(url)' and 'Park Description'. The form has validation and character limits that have to be adheared to for the app to accept the users request.
+ Clicking the 'Edit' button on this form will update the park information on the 'Home' and 'Manage Parks' pages. Clicking the 'Cancel' button will bring users back to the 'Manage Parks' page without updating the information. 
+
+- _Edit button_ - Clicking the 'Edit' button on this form will update the park information on the 'Home' and 'Manage Parks' pages. It will also be found within the dropdown list in the 'Park Name' field on the 'Add A Walk' page.
+
+- _Cancel button_ - Clicking the 'Cancel' button will bring users back to the 'Manage Parks' page without updating the information. 
+
 #### Features on the Edit Walks Page -
+
+- _Edit Walk form_ -
+
+- _Edit button_ -
+
+- _Cancel button_ -
 
 ### Features left to Implement -
 
