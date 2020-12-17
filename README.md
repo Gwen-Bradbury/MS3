@@ -176,25 +176,34 @@ that have to be adheared to for the app to accept the users request.
 
 #### Features on the Manage Parks Page -
 
-- _List of Parks_- 
+- _List of Parks_- The parks are in a card layout with an image of the park, park name and park description. They're two to a row on medium and larger screens and one below the other on smaller and mobile device screens.
+The images match those on the 'Home' page for consistancy.
 
-- _Edit button_-
+- _Edit button_- This button allows the admin to edit the park details. Clicking the 'Edit' button will take users to the 'Edit Park' page where they'll find a simple form with fields for 'Park Name', 'Park Image(url)' and 'Park Description'.
+ The form has validation and character limits that have to be adheared to for the app to accept the users request.
+ Clicking the 'Edit' button on this form will update the park information on the 'Home' and 'Manage Parks' pages. Clicking the 'Cancel' button will bring users back to the 'Manage Parks' page without updating the information. 
 
-- _Delete button_-
+- _Delete button_- The 'Delete' button will delete that park but not the walks within it.
 
-- _Add a Park Form_-
+- _Add a Park Form_- This form has fields for 'Park Name', 'Park Image(url)' and 'Park Description'. The form has validation and character limits 
+that have to be adheared to for the app to accept the users request. Clicking the 'Add' button will add this park to the DB and it will be visiable on the 'Home' and 'Manage Parks' pages. It will also be 
+found within the dropdown list in the 'Park Name' field on the 'Add A Walk' page.
 
-- _Cancel Button_-
+- _Cancel Button_- This button cancels the request to add a new park.
 
 #### Features on the My Walks Page -
 
-- _Users Username_-
+- _Users Username_- This will display the username the user picked on sign up and is displayed at the top of the page under the headline image.
 
-- _List of added Walks_-
+- _List of added Walks_- This list contains all the walks the user has added using the 'Add A Walk' page, plus the ones they've added using the 'Add To My Walks' button located on the 'Home' page within the accordion, under 'All Walks'.
 
-- _Edit button_-
+- _Edit button_- Clicking this button will allow the user to edit the walks they've added to the list using the 'Add A Walk' page. Users can only edit the walks that they've added to the DB, not other users. Clicking this button will take the user to the
+'Edit Walk' page where they'll find a simple form with fields for 'Park Name', 'Walk Name', 'Walk Description' and 'Walk Length'. 
+The form has validation and character limits that have to be adheared to for the app to accept the users request. Clicking the 'Edit' button will update the walk information and can be viewed on the 'Home' page, under 'All Walks',
+and within the 'My Walks' page.
 
-- _Delete button_-
+- _Delete button_- This buuton will delete the walk. If this walk was added using the 'Add A Walk' page, it will delete from the DB, 'Home' and 'My Walks' pages. If it was added using the 'Add To My Walks' button located on the 'Home' page under 'All Walks', it 
+will only delete from the 'My Walks' page.
 
 #### Features on the Edit Parks Page -
 
@@ -245,6 +254,8 @@ https://www.w3.org/Style/CSS/Overview.en.html
 ### API's - 
 
 1. **Flask:** Web framework for developing applications - https://flask.palletsprojects.com/en/1.1.x/
+
+2. **Google Maps:** 
 
 ### Databases -
 
