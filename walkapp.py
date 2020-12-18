@@ -149,6 +149,14 @@ def edit_walks(walk_id):
     return render_template("edit_walk.html", walk=walk, park=park)
 
 
+# Delete Walks
+@app.route("/delete_walks/<walk_id>")
+def delete_walks(walk_id):
+    mongo.db.walks.remove({"_id": ObjectId(walk_id)})
+    flash("Walk Successfully Deleted!")
+    return redirect(url_for("get_walks_parks"))
+
+
 # Get Parks
 @app.route("/get_park")
 def get_park():
