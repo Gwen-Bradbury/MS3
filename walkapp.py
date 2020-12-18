@@ -125,8 +125,17 @@ def add_walk():
         mongo.db.walks.insert_one(walk)
         flash("Walk Successfully Added!")
         return redirect(url_for("get_walks_parks"))
+
     park = mongo.db.park.find().sort("park_name", 1)
     return render_template("add_walk.html", park=park)
+
+
+# Edit Walks
+@app.route("/edit_walks/<walk_id>", methods=["GET", "POST"])
+def edit_walks(walk_id):
+    walk = mongo.db.walks.find_one({"_id": ObjectId(walk_id)})
+    park = mongo.db.park.find().sort("park_name", 1)
+    return render_template("edit_walk.html", walk=walk, park=park)
 
 
 # Get Parks
