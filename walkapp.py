@@ -133,6 +133,17 @@ def add_walk():
 # Edit Walks
 @app.route("/edit_walks/<walk_id>", methods=["GET", "POST"])
 def edit_walks(walk_id):
+    if request.method == "POST":
+        submit = {
+            "park_name": request.form.get("park_name"),
+            "walk_name": request.form.get("walk_name"),
+            "walk_description": request.form.get("walk_description"),
+            "walk_length": request.form.get("walk_length"),
+            "created_by": session["user"]
+        }
+        mongo.db.walks.update({"_id": ObjectId(walk_id)}, submit)
+        flash("Walk Successfully Updated!")
+        return redirect(url_for("get_walks_parks"))
     walk = mongo.db.walks.find_one({"_id": ObjectId(walk_id)})
     park = mongo.db.park.find().sort("park_name", 1)
     return render_template("edit_walk.html", walk=walk, park=park)
