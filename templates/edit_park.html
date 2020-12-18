@@ -29,7 +29,9 @@
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix"></i>
                     <textarea id="park_description" name="park_description" minlength="5" 
-                       value="{{ park.park_description }}" class="materialize-textarea validate" required></textarea>
+                       class="materialize-textarea validate" required>
+                    {{- park.park_description -}}
+                    </textarea>
                     <label for="park_description">Park Description</label>
                 </div>
             </div>
