@@ -92,11 +92,12 @@ def login():
 # Get Users Username
 @app.route("/mywalks/<username>", methods=["GET", "POST"])
 def mywalks(username):
+    walks = list(mongo.db.walks.find().sort("walk_name", 1))
     # Get session users username from DB
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     if session["user"]:
-        return render_template("mywalks.html", username=username)
+        return render_template("mywalks.html", username=username, walks=walks)
 
     return redirect(url_for("login"))
 
