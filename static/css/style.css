@@ -87,6 +87,3 @@ nav {
     margin: 5px;
     padding: 5px;
 }
-
-<script src="{{ url_for('static', filename='js/toTopButton.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
