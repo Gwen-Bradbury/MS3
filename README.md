@@ -234,6 +234,12 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
+- _Active Class_ - Use flask to highlight current page on nav link.
+
+- _Confirmation of deletion_ - A modal that asks the user if they're sure they want to delete the park/walk.
+
+- _Confirm Password_ - Another form box on the registration page that confirms the users password.
+
 - _Add to My Walks button_- A button that allows users to add other users walks that they would like to do, to thier 'My Walks' page. The 'Delete' button will only delete the walk from thier page, not the DB. It won't have an 'Edit' button.
 
 - _More Parks_- Add more Parks for users to add walks into. 
