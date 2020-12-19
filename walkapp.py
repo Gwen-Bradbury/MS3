@@ -57,6 +57,7 @@ def register():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("mywalks", username=session["user"]))
+
     return render_template("register.html")
 
 
@@ -92,7 +93,8 @@ def login():
 # Get Users Username
 @app.route("/mywalks/<username>", methods=["GET", "POST"])
 def mywalks(username):
-    walks = list(mongo.db.walks.find().sort("walk_name", 1))
+    # Get walks from DB
+    walks = list(mongo.db.walks.find())
     # Get session users username from DB
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]

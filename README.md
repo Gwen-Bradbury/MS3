@@ -200,7 +200,7 @@ found within the dropdown list in the 'Park Name' field on the 'Add A Walk' page
 
 - _Users Username_- This will display the username the user picked on sign up and is displayed at the top of the page under the headline image.
 
-- _List of added Walks_- This list contains all the walks the user has added using the 'Add A Walk' page, plus the ones they've added using the 'Add To My Walks' button located on the 'Home' page within the accordion, under 'All Walks'.
+- _List of added Walks_- This list contains all the walks the user has added using the 'Add A Walk' page.
 
 - _Edit button_- Clicking this button will allow the user to edit the walks they've added to the list using the 'Add A Walk' page. Users can only edit the walks that they've added to the DB, not other users. Clicking this button will take the user to the
 'Edit Walk' page where they'll find a simple form with fields for 'Park Name', 'Walk Name', 'Walk Description' and 'Walk Length'. 
@@ -230,7 +230,11 @@ The 'Cancel' button cancels the request to add a new walk.
 
 - _Cancel button_ - This button cancels the request to add a new walk.
 
+Unfortunately I didn't have time to implement the 'Add to My Walks' button that would have been visiable on the 'Home' page. I've added it to the 'Features left to Implement' README.md section.
+
 ### Features left to Implement -
+
+- _Add to My Walks button_- A button that allows users to add other users walks that they would like to do, to thier 'My Walks' page. The 'Delete' button will only delete the walk from thier page, not the DB. It won't have an 'Edit' button.
 
 - _More Parks_- Add more Parks for users to add walks into. 
 
@@ -238,7 +242,7 @@ The 'Cancel' button cancels the request to add a new walk.
 
 - _Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
 
-- _Map Markers_ - The ability to add another marker pin to the map when a new park is added to the DB.
+- _Map Markers_- The ability to add another marker pin to the map when a new park is added to the DB.
 
 ### Bugs and Fixes Implemented after Testing -
 

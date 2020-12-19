@@ -14,6 +14,11 @@ nav {
     line-height: 3;
 }
 
+/* Register */
+.password {
+    color: #9e9e9e;
+}
+
 /* Back to Top Button */
 #myBtn {
   display: none; /* Hidden by default */
