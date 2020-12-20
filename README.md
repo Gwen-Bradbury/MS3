@@ -316,8 +316,7 @@ https://www.w3.org/Style/CSS/Overview.en.html
 1.  http://ami.responsivedesign.is/ has been used to see how the site performs on different Apple devices and their viewports, all links, icons performed as expected on all devices. I also used it to create the AppleDevicesView.png at the top of this Readme.
 
 2. **Laptop:**
-
-- Google Chrome Browser; all feature links and icons perform well on all viewport sizes. Developer tools were also used on browser for the various viewport sizes. 
+    - Google Chrome Browser; all feature links and icons perform well on all viewport sizes. Developer tools were also used on browser for the various viewport sizes. 
 The webpages are responsive as are the images, map markers, info windows and forms, whilst retaining user freindly design aspects.
 All buttons, markers and links were clicked and tested for responses, all form fields were filled out and responded as expected, all features were used and tested with appropriate responses given.
 All 'Delete' buttons delete the appropriate information.
@@ -325,10 +324,14 @@ All nav links take the user to the page stated.
 The 'Edit' buttons take the user to a form with the fields filled out with the current information and the 'Edit' button within the form changes the information within the DB, before taking the user to the home page.
 The 'Cancel' buttons remove the user from that form without changing any of the information, or adding parks and walks to the DB. 
 The 'Add' buttons add the required park and walk information to the DB before taking them back to the 'Home' page.
-** The buttons within the forms on and within the 'Manage Parks' section will take the admin back to the 'Manage Parks' page rather than the 'Home' page. **
+**The buttons within the forms on and within the 'Manage Parks' section will take the admin back to the 'Manage Parks' page rather than the 'Home' page.**
 On the 'Login' page the button takes the user to their profile page upon correct entry of thier personal username and password, and the link to the 'Register' page transports the user to that page as expected.
 On the 'Register' page the button transports the user to thier profile page after registering their username and password. The link to the 'login' page also takes the user to that page as expected.
 Flash Images give the user real time feed back on thier inputs and are visiable with bold, large text and contrasting background to grab the users attention. They show at the approprite time and with the correct text in all circumstances.
+
+![Chromebook Devices picture](./wireframes/chromebook.png)
+
+3. **
 
 **Open Issues:**
 
