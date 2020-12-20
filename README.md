@@ -328,10 +328,20 @@ The 'Add' buttons add the required park and walk information to the DB before ta
 On the 'Login' page the button takes the user to their profile page upon correct entry of thier personal username and password, and the link to the 'Register' page transports the user to that page as expected.
 On the 'Register' page the button transports the user to thier profile page after registering their username and password. The link to the 'login' page also takes the user to that page as expected.
 Flash Images give the user real time feed back on thier inputs and are visiable with bold, large text and contrasting background to grab the users attention. They show at the approprite time and with the correct text in all circumstances.
+The back to top button takes the user to the top of the current page and has been tested and reponded as expected on every page.
 
 ![Chromebook Devices picture](./wireframes/chromebook.png)
 
-3. **
+3. **Mobile**
+    - Safari browser; all feature links and icons perform well. The webpages are responsive as are the images, map markers, info windows and forms, whilst retaining user freindly design aspects. The images did not appear streched or pixilated and remained sharp and clear throughtout the site.
+
+4. **Ipad Pro and Mini**
+
+![Apple Devices picture](./wireframes/responsive.png)
+
+5. **Desktop**
+
+6.  **Manual Testing**
 
 **Open Issues:**
 
