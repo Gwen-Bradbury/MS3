@@ -59,6 +59,10 @@ Both the 'Add A Walk' page allow users to add Walks, to the database using a sim
 The last link in the navbar allows users to exit or 'Log Out' of the app.
 I made navigation through the website easy with a fixed navbar and search box located on the 'Home' page.
 
+- _Database Structure_ - I needed the data to be structured with the walks inside the parks. The walks would need the park name but would also nees the username of the users. I used a data schema to help visualise how the database would be structured.
+
+![Data Schema picture](./wireframes/data_schema.png)
+
 4. _Skeleton Plane_ - As mentioned in the Structure Plane, I decided to use a fixed navbar and search bar as the main source of navigation through the app. This allows the user to move thoughout the app at a pace that suits them, in the easiest way possible. Returning users can find the page they're looking for, using the navbar, without having to scroll through lots of information they've already seen on previous visits, 
 and can use the search bar to search for the walks and parks that they're most interested in. The 'My Walks' page link in the navbar will also allow the user to locate all the parks and walks they've added to it, without scrolling through the database on the 'Home' page.
 
@@ -552,6 +556,8 @@ For more information about the above process; https://help.github.com/en/github/
 4. Wireframes - https://www.figma.com/file/r6CISvX0N6sXBacS11lnIs/MS3
 
 5. Colour Scheme - https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
+
+6. Data Schema - https://dbdiagram.io/d/5fe35ac09a6c525a03bc2023
 
 ### Media -
 
