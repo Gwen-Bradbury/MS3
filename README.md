@@ -185,8 +185,8 @@ that have to be adheared to for the app to accept the users request.
 The images match those on the 'Home' page for consistancy.
 
 - _Edit button_- This button allows the admin to edit the park details. Clicking the 'Edit' button will take users to the 'Edit Park' page where they'll find a simple form with fields for 'Park Name', 'Park Image(url)' and 'Park Description'.
- The form has validation and character limits that have to be adheared to for the app to accept the users request.
- Clicking the 'Edit' button on this form will update the park information on the 'Home' and 'Manage Parks' pages. Clicking the 'Cancel' button will bring users back to the 'Manage Parks' page without updating the information. 
+The form has validation and character limits that have to be adheared to for the app to accept the users request.
+Clicking the 'Edit' button on this form will update the park information on the 'Home' and 'Manage Parks' pages. Clicking the 'Cancel' button will bring users back to the 'Manage Parks' page without updating the information. 
 
 - _Delete button_- The 'Delete' button will delete that park but not the walks within it.
 
@@ -409,6 +409,8 @@ Flash Images give the user real time feed back on thier inputs and are visiable 
 The back to top button takes the user to the top of the current page and has been tested and reponded as expected on every page.
 
 7. **Manual Testing**
+    - Various browsers and devices; the project was shared in the peer-code-review CI slack room and was tested by other CI Students, Mentors, Alumni and Tutors.
+The results of this were... 
 
 **Open Issues:**
 

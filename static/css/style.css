@@ -14,6 +14,12 @@ nav {
     line-height: 3;
 }
 
+/* Modal */
+
+h4 {
+    color: #37474f;
+}
+
 /* Register */
 .password {
     color: #9e9e9e;
