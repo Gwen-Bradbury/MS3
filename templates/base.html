@@ -58,13 +58,12 @@
     </header>
     <!-- Back to Top Button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!-- Main Headline Image-->
+    <!-- Main Headline Image -->
     <div>
         <img class="main-image" src="/static/images/main_image.jpg" alt="Sunrise on hills">
     </div>
-
-    <section>
     <!-- Flash Messages -->
+    <section>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
@@ -77,12 +76,12 @@
         {% endif %}
     {% endwith %}
     </section>
-
+    <!-- Page Content -->
     <main class="container">
 	    {% block content %}
 	    {% endblock %}
     </main>
-
+    <!-- Footer -->
     <footer>
         <div class="row copyright">
             <div class="col s12 center-align">
