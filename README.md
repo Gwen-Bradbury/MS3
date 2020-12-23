@@ -59,7 +59,7 @@ Both the 'Add A Walk' page allow users to add Walks, to the database using a sim
 The last link in the navbar allows users to exit or 'Log Out' of the app.
 I made navigation through the website easy with a fixed navbar and search box located on the 'Home' page.
 
-- _Database Structure_ - I needed the data to be structured with the walks inside the parks. The walks would need the park name but would also nees the username of the users. I used a data schema to help visualise how the database would be structured.
+- _Database Structure_ - I needed the data to be structured with the walks inside the parks. The walks would need the park name but would also need the username of the users. I used a data schema to help visualise how the database would be structured.
 
 ![Data Schema picture](./wireframes/data_schema.png)
 
