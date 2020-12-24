@@ -180,6 +180,10 @@ develop this app, as well as technologies such as Materialize for responsiveness
 
 ## Features
 
+-   Responsive on all device sizes.
+
+-   Interactive elements.
+
 ### Existing Features -
 
 #### Features on the Home Page -
@@ -456,7 +460,8 @@ Flash Images give the user real time feed back on thier inputs and are visiable 
 The back to top button takes the user to the top of the current page and has been tested and reponded as expected on every page.
 
 7. **Manual Testing**
-    - Various browsers and devices; the project was shared in the peer-code-review CI slack room and was tested by other CI Students, Mentors, Alumni and Tutors.
+    - Various browsers and devices; the project was shared in the peer-code-review CI slack room and was tested by other CI Students, Mentors, Alumni and Tutors. 
+This is in direct relation to the 'Goals' and 'User Stories' from the 'UX' Section.
 The results of this were -
         1. Users can easily understand the main purpose of the site.
         2. It's colorful and engaging.
