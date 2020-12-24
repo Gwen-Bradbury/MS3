@@ -1,6 +1,50 @@
 # UK Walks
 
-(*Markdown Toc)
+- [UK Walks](#uk-walks)
+  * [Introduction](#introduction)
+  * [UX](#ux)
+    + [Goals -](#goals--)
+    + [Wireframes -](#wireframes--)
+    + [Design](#design)
+      - [Design Process -](#design-process--)
+      - [Colour Pallette -](#colour-pallette--)
+      - [Font -](#font--)
+  * [User Stories](#user-stories)
+    + [As a Site User -](#as-a-site-user--)
+    + [As a Designer -](#as-a-designer--)
+    + [As an Employer -](#as-an-employer--)
+  * [Features](#features)
+    + [Existing Features -](#existing-features--)
+      - [Features on the Home Page -](#features-on-the-home-page--)
+      - [Features on the Login Page -](#features-on-the-login-page--)
+      - [Features on the Register Page -](#features-on-the-register-page--)
+      - [Features on the Add a Walk Page -](#features-on-the-add-a-walk-page--)
+      - [Features on the Manage Parks Page -](#features-on-the-manage-parks-page--)
+      - [Features on the My Walks Page -](#features-on-the-my-walks-page--)
+      - [Features on the Edit Parks Page -](#features-on-the-edit-parks-page--)
+      - [Features on the Edit Walks Page -](#features-on-the-edit-walks-page--)
+    + [Features left to Implement -](#features-left-to-implement--)
+    + [Bugs and Fixes Implemented after Testing -](#bugs-and-fixes-implemented-after-testing--)
+  * [Technologies Used](#technologies-used)
+    + [Languages -](#languages--)
+    + [Libraries -](#libraries--)
+    + [API's -](#api-s--)
+    + [Databases -](#databases--)
+    + [Tools -](#tools--)
+  * [Testing](#testing)
+    + [Validation of Code Testing -](#validation-of-code-testing--)
+  * [Deployment](#deployment)
+    + [Hosting on Heroku -](#hosting-on-heroku--)
+    + [Hosting on GitHub pages -](#hosting-on-github-pages--)
+      - [Used Commands during Deployment -](#used-commands-during-deployment--)
+    + [Running this Project Locally -](#running-this-project-locally--)
+  * [Credits](#credits)
+    + [Content -](#content--)
+    + [Media -](#media--)
+    + [Acknowledgements -](#acknowledgements--)
+  * [Disclaimer](#disclaimer)
+      - [This website was made for educational purposes only](#this-website-was-made-for-educational-purposes-only)
+
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Introduction
@@ -240,8 +284,6 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 - _Active Class_ - Use flask to highlight current page on nav link.
 
-- _Confirmation of deletion_ - A modal that asks the user if they're sure they want to delete the park/walk.
-
 - _Confirm Password_ - Another form box on the registration page that confirms the users password.
 
 - _Add to My Walks button_- A button that allows users to add other users walks that they would like to do, to thier 'My Walks' page. The 'Delete' button will only delete the walk from thier page, not the DB. It won't have an 'Edit' button.
@@ -418,7 +460,7 @@ The results of this were...
 
 **Open Issues:**
 
-    * Input fields - On smaller device screens the overflow from the users text input in the form fields, scrolls across instead of opening up a new line underneath.
+* Input fields - On smaller device screens the overflow from the users text input in the form fields, scrolls across instead of opening up a new line underneath.
 
 ### Validation of Code Testing -
 
