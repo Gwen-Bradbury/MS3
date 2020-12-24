@@ -37,6 +37,7 @@
     + [Hosting on Heroku -](#hosting-on-heroku--)
     + [Hosting on GitHub pages -](#hosting-on-github-pages--)
       - [Used Commands during Deployment -](#used-commands-during-deployment--)
+    + [Forking the GitHub Repository -](#forking-the-github-repository--)
     + [Running this Project Locally -](#running-this-project-locally--)
   * [Credits](#credits)
     + [Content -](#content--)
@@ -561,6 +562,17 @@ and you are then given a url where your page is published; Your site is publishe
 3. git push - To push the committed files to the origin master branch on github.
 
 4. git status - To see the current state of the files.
+
+### Forking the GitHub Repository -
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original 
+repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+3. You should now have a copy of the original repository in your GitHub account.
 
 ### Running this Project Locally -
 
