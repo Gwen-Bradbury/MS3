@@ -143,7 +143,9 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 ### As a Site User - 
 
-- As a user, I want to be able to add walks, edit them and delete those walks easily.
+- As a user, I want to be able to create a new walk, edit that content easily.
+
+- As a user, I want the option to delete my input if necessary.
 
 - As a user, I want confirmation before deleting something.
 
@@ -158,6 +160,8 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 - As a user, I want the the app to be easy to use and navigate.
 
 - As a user, I don't want other users deleting my walks.
+
+- As a user, I want to choose and register my own username and password to something I can easily remember.
 
 ### As a Designer -
 
