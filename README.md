@@ -50,7 +50,7 @@
 
 ## Introduction
 
-![Apple Devices Picture](./wireframes/responsive.png)
+![Apple Devices Picture](./documentation/responsive.png)
 
 This is my third milestone project; Designed to exhibit my capabilities and skills in javascript, as a student
 of Code Institute. (https://codeinstitute.net/)
@@ -100,7 +100,7 @@ I made navigation through the website easy with a fixed navbar and search box lo
 
 - _Database Structure_ - I needed the data to be structured with the walks inside the parks. The walks would need the park name but would also need the username of the users. I used a data schema to help visualise how the database would be structured.
 
-![Data Schema picture](./wireframes/data_schema.png)
+![Data Schema picture](./documentation/data_schema.png)
 
 4. _Skeleton Plane_ - As mentioned in the Structure Plane, I decided to use a fixed navbar and search bar as the main source of navigation through the app. This allows the user to move thoughout the app at a pace that suits them, in the easiest way possible. Returning users can find the page they're looking for, using the navbar, without having to scroll through lots of information they've already seen on previous visits, 
 and can use the search bar to search for the walks and parks that they're most interested in. The 'My Walks' page link in the navbar will also allow the user to locate all the parks and walks they've added to it, without scrolling through the database on the 'Home' page.

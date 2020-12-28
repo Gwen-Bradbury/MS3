@@ -29,7 +29,7 @@ The 'Reset' button resets the page back to it's origional state, listing all the
 Flash Images give the user real time feed back on thier inputs and are visiable with bold, large text and contrasting background to grab the users attention. They show at the approprite time and with the correct text in all circumstances.
 The back to top button takes the user to the top of the current page and has been tested and reponded as expected on every page.
 
-![Chromebook Devices picture](./wireframes/chromebook.png)
+![Chromebook Devices picture](./documentation/chromebook.png)
 
 3. **Mobile:**
     - Safari browser; all feature links and icons perform well. The webpages are responsive as are the images, map markers, info windows and forms, whilst retaining user freindly design aspects. The images did not appear streched or pixilated and remained sharp and clear throughtout the site.
@@ -82,7 +82,7 @@ The 'Reset' button resets the page back to it's origional state, listing all the
 Flash Images give the user real time feed back on thier inputs and are visiable with bold, large text and contrasting background to grab the users attention. They show at the approprite time and with the correct text in all circumstances.
 The back to top button takes the user to the top of the current page and has been tested and reponded as expected on every page.
 
-![Apple Devices picture](./wireframes/responsive.png)
+![Apple Devices picture](./documentation/responsive.png)
 
 6. **Desktop**
     - Google Chrome Browser; all feature links and icons perform well on all viewport sizes. Developer tools were also used on browser for the various viewport sizes. 

@@ -7,7 +7,7 @@
 
 ### Wireframes
 
-![Wireframe picture](./wireframes/MS3.png)
+![Wireframe picture](./documentation/MS3.png)
 
 It was recommended by my mentor to add a google map on the home page. 
 I used the markers on the map to point to the parks locations giving the user an idea into the distance between them and the park they're interested in.
