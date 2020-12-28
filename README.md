@@ -290,7 +290,7 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 - _Edit/Delete Walk_ - Take user back to 'My Walks' page instead of 'Home' page.
 
-- _Google Map width_ - Make the google map wider on larger screen sizes.
+- _Google Map Width_ - Make the google map wider on larger screen sizes.
 
 - _Username Title_ - Add title class to the username to give it a capital first letter.
 
@@ -492,7 +492,22 @@ The results of this were -
 
 ### Validation of Code Testing -
 
-All of my HTML, CSS and Javascript was run through the validators without returning any errors.
+All of my HTML, CSS and Javascript was run through the validators.
+
+- Errors on the HTML validator relate to the python in the HTML documents and only having a Doctype on base.html. The other HTML pages
+extend from this one.
+
+- There were no Errors on the CSS validator.
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+- There were no Errors or Warnings on the Javascript validator.
+            
 
 ## Deployment
 

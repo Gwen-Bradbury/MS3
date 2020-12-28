@@ -22,7 +22,7 @@ function initMap() {
             coordinates: { lat: 54.4609 , lng: -3.0886 },
             content:'<p>Lake District<p>'
         }
-    ]
+    ];
     /* Info Window */
     let infoWindow = new google.maps.InfoWindow();
         for (let i = 0; i < UKParks.length; i++) {
