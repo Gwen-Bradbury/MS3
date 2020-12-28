@@ -281,6 +281,10 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
+- _Add Dropdown_ - Add a dropdown for the miles/km in add/edit walks instead of having to type it.
+
+- _Google Map Pins_ - Add cluster pins to not crowd the map.
+
 - _Edit/Delete Walk_ - Take user back to 'My Walks' page instead of 'Home' page.
 
 - _Google Map Width_ - Make the google map wider on larger screen sizes.
