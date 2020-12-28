@@ -14,4 +14,7 @@ I used the markers on the map to point to the parks locations giving the user an
 She also recommended a back to top button.
 On my last mentor call it was advised to remove the first name row from my 'Register' and 'Log In' pages.
 
+![Wireframe picture](./documentation/mobileWireframes.png)
+
+
 ** Back to [README.md](./README.md) **
