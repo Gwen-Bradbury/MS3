@@ -1,3 +1,8 @@
+- [Testing](#testing)
+  * [Open Issues:](#open-issues-)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Testing
 
 I carried our substantial testing on all of my apps pages and links.
