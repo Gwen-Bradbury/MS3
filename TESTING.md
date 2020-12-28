@@ -1,3 +1,5 @@
+# UK Walks
+
 - [Testing](#testing)
   * [Open Issues:](#open-issues-)
 
