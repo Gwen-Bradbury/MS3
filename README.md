@@ -143,7 +143,7 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 ### As a Site User - 
 
-- As a user, I want to be able to add, edit and delete my input easily.
+- As a user, I want to be able to add walks, edit them and delete those walks easily.
 
 - As a user, I want to find what I'm looking for quickly and easily.
 
@@ -155,22 +155,11 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 - As a user, I want the the app to be easy to use and navigate.
 
+- As a user, I don't want other users deleting my walks.
+
 ### As a Designer -
 
-- As a web designer and developer, I want to track the user behaviour so that I can improve the user experience. I want to track the user behaviour so that I can identify the possible user confusion over navigating the app.
-I want feed back from the users on what features are being used most frequently and ideas on other interesting walks.
-
 - As a web designer and developer, I want the app to be interactive and give real time feedback when a user executes an action.
-
-### As an Employer -
-
-- As an employer/recruiter, I need to see and review the skills and work capabilities, and analyze if you have the skills we require. In this website I've used many user-friendly features to showcase my skills as a developer.
-From the layout and colour scheme to the interactivity, every implemented piece of code has been built to make the site as appealing and easy to use for customers as possible.
-Possible employers will be able to see from the app and the features implemented that my standard of work is very high, and my capabilities reflect my current skillset, which will improve as I gain more knowledge moving through
-the Code Institute Full Stack Developer course.
-
-- On our Human Resources team, we look for the information that pertains to the specific needs of the company, and does this individual have those skill sets. My skill sets are evidenced in the app produced. I've used a wide range of HTML, CSS, JavaScript and Jinja to
-develop this app, as well as technologies such as Materialize for responsiveness.
 
 ## Features
 
