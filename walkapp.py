@@ -20,13 +20,10 @@ mongo = PyMongo(app)
 
 # Get Walks and Parks for 'Home' page
 
-
-""" Get Walks and Parks for 'Home' page. """
-
-
 @app.route("/")
 @app.route("/get_walks_parks")
 def get_walks_parks():
+    """ Get Walks and Parks for 'Home' page. """
     park = list(mongo.db.park.find().sort("park_name", 1))
     walks = list(mongo.db.walks.find().sort("walk_name", 1))
     return render_template("walks.html", walks=walks, park=park)
@@ -34,12 +31,9 @@ def get_walks_parks():
 
 # Search Bar
 
-
-""" Search Bar """
-
-
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """ Search Bar """
     search = request.form.get("search")
     walks = list(mongo.db.walks.find({"$text": {"$search": search}}))
     return render_template("walks.html", walks=walks)
@@ -47,30 +41,27 @@ def search():
 
 # Register Account
 
-
-""" Register Account """
-
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """ Register Account """
     if request.method == "POST":
         """ Check if username already exists in DB """
 
         existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
+            {"username": request.form.get("username").title()})
 
         if existing_user:
             flash("Account Already Exists")
             return redirect(url_for("register"))
 
         register = {
-            "username": request.form.get("username").lower(),
+            "username": request.form.get("username").title(),
             "password": generate_password_hash(request.form.get("password"))
         }
         mongo.db.users.insert_one(register)
 
         """ Put the user into 'session' cookie """
-        session["user"] = request.form.get("username").lower()
+        session["user"] = request.form.get("username").title()
         flash("Registration Successful!")
         return redirect(url_for("mywalks", username=session["user"]))
 
@@ -79,22 +70,19 @@ def register():
 
 # Log In
 
-
-""" Log In """
-
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """ Log In """
     if request.method == "POST":
         """ Check if username already exists in DB """
         existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
+            {"username": request.form.get("username").title()})
 
         if existing_user:
             """ Ensure hashed password matches user input """
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                session["user"] = request.form.get("username").lower()
+                session["user"] = request.form.get("username").title()
                 flash("Welcome, {}".format(request.form.get("username")))
                 return redirect(url_for(
                     "mywalks", username=session["user"]))
@@ -113,12 +101,9 @@ def login():
 
 # Get users Username
 
-
-""" Get Users Username """
-
-
 @app.route("/mywalks/<username>", methods=["GET", "POST"])
 def mywalks(username):
+    """ Get Users Username """
     """ Get walks from DB """
     walks = list(mongo.db.walks.find())
     """ Get session users username from DB """
@@ -132,12 +117,9 @@ def mywalks(username):
 
 # Log Out
 
-
-""" Log Out """
-
-
 @app.route("/logout")
 def logout():
+    """ Log Out """
     """ Remove user from session cookies """
     flash("You've Been Logged Out")
     session.pop("user")
@@ -146,12 +128,9 @@ def logout():
 
 # Add Walk to DB
 
-
-""" Add Walk to DB """
-
-
 @app.route("/add_walk", methods=["GET", "POST"])
 def add_walk():
+    """ Add Walk to DB """
     if request.method == "POST":
         walk = {
             "park_name": request.form.get("park_name"),
@@ -170,12 +149,9 @@ def add_walk():
 
 # Edit Walks
 
-
-""" Edit Walks """
-
-
 @app.route("/edit_walks/<walk_id>", methods=["GET", "POST"])
 def edit_walks(walk_id):
+    """ Edit Walks """
     if request.method == "POST":
         submit = {
             "park_name": request.form.get("park_name"),
@@ -194,12 +170,9 @@ def edit_walks(walk_id):
 
 # Delete Walks
 
-
-""" Delete Walks """
-
-
 @app.route("/delete_walks/<walk_id>")
 def delete_walks(walk_id):
+    """ Delete Walks """
     mongo.db.walks.remove({"_id": ObjectId(walk_id)})
     flash("Walk Successfully Deleted!")
     return redirect(url_for("get_walks_parks"))
@@ -207,22 +180,18 @@ def delete_walks(walk_id):
 
 # Get Parks
 
-""" Get Parks """
-
-
 @app.route("/get_park")
 def get_park():
+    """ Get Parks """
     park = list(mongo.db.park.find().sort("park_name", 1))
     return render_template("parks.html", park=park)
 
 
 # Add Park to DB
 
-""" Add Park to DB """
-
-
 @app.route("/add_park", methods=["GET", "POST"])
 def add_park():
+    """ Add Park to DB """
     if request.method == "POST":
         park = {
             "park_name": request.form.get("park_name"),
@@ -238,11 +207,9 @@ def add_park():
 
 # Edit Parks
 
-""" Edit Parks """
-
-
 @app.route("/edit_park/<park_id>", methods=["GET", "POST"])
 def edit_park(park_id):
+    """ Edit Parks """
     if request.method == "POST":
         submit = {
             "park_name": request.form.get("park_name"),
@@ -258,11 +225,9 @@ def edit_park(park_id):
 
 # Delete Parks
 
-""" Delete Parks """
-
-
 @app.route("/delete_park/<park_id>")
 def delete_park(park_id):
+    """ Delete Parks """
     mongo.db.park.remove({"_id": ObjectId(park_id)})
     flash("Park Successfully Deleted!")
     return redirect(url_for("get_park"))

@@ -7,6 +7,7 @@ body {
 nav {
     position: fixed;
     z-index: 10;
+    padding-left: 10px; 
 }
 
 /* Flash Images */
@@ -14,8 +15,12 @@ nav {
     line-height: 3;
 }
 
-/* Modal */
+/* Search Bar */
+.search-bar {
+    padding-top: 20px;
+}
 
+/* Modal */
 h4 {
     color: #37474f;
 }
