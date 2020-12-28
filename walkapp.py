@@ -48,20 +48,20 @@ def register():
         """ Check if username already exists in DB """
 
         existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").title()})
+            {"username": request.form.get("username").lower()})
 
         if existing_user:
             flash("Account Already Exists")
             return redirect(url_for("register"))
 
         register = {
-            "username": request.form.get("username").title(),
+            "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
         }
         mongo.db.users.insert_one(register)
 
         """ Put the user into 'session' cookie """
-        session["user"] = request.form.get("username").title()
+        session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("mywalks", username=session["user"]))
 
@@ -76,13 +76,13 @@ def login():
     if request.method == "POST":
         """ Check if username already exists in DB """
         existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").title()})
+            {"username": request.form.get("username").lower()})
 
         if existing_user:
             """ Ensure hashed password matches user input """
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                session["user"] = request.form.get("username").title()
+                session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
                 return redirect(url_for(
                     "mywalks", username=session["user"]))

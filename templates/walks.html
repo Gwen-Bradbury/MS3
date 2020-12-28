@@ -27,6 +27,26 @@
         </form>
     </div>
     {% if walks|length > 0 %}
+    <!-- Walks Accordion -->
+    <h3 class="center-align">All Walks</h3>
+    <ul class="collapsible popout blue-grey-text text-darken-3 center-align">
+        {% for walk in walks %}
+        <li>
+            <div class="collapsible-header">
+                <div class="col s12 m6">
+                    <i class="fas fa-caret-down"></i>
+                    <strong>{{ walk.walk_name }}</strong>
+                </div>
+            </div>
+            <div class="collapsible-body blue-grey-text text-darken-3">
+                <strong>{{ walk.park_name }}</strong>
+                <p>{{ walk.walk_description }}</p>
+                <p>{{ walk.walk_length }}</p>
+                <p><em>by: {{ walk.created_by }}</em></p>
+            </div> 
+        </li>
+        {% endfor %}
+    </ul>
     <!-- Park Cards -->
     <h3 class="center-align">All Parks</h3>
     <div class="row">
@@ -49,28 +69,7 @@
     <div class="container">
         <div id="map" alt="Google Map failure"></div>
     </div>
-    <!-- Walks Accordion -->
-    <h3 class="center-align">All Walks</h3>
-    <ul class="collapsible popout blue-grey-text text-darken-3 center-align">
-        {% for walk in walks %}
-        <li>
-            <div class="collapsible-header">
-                <div class="col s12 m6">
-                    <i class="fas fa-caret-down"></i>
-                    <strong>{{ walk.walk_name }}</strong>
-                </div>
-            </div>
-            <div class="collapsible-body blue-grey-text text-darken-3">
-                <strong>{{ walk.park_name }}</strong>
-                <p>{{ walk.walk_description }}</p>
-                <p>{{ walk.walk_length }}</p>
-                <p><em>by: {{ walk.created_by }}</em></p>
-            </div> 
-        </li>
-        {% endfor %}
-    </ul>
     {% else %}
         <h3 class="center-align">No Results Found!</h3>
     {% endif %}
- 
 {% endblock %}
