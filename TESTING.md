@@ -157,6 +157,8 @@ The results of this were -
     - Correct Log In information was then used which resulted in taking the user back to thier 'My Walks' page with thier username and walks visiable on it as programmed.
     - Admins have access to the 'Manage Walks' page. A second username was registered to check that the 'Manage Walks' page was hidden, and walks added by other users couldn't be edited, or deleted by another user. The new users username was visiable at the top of the 'My Walks' page and as expected the admin users added walks were hidden on it. The 'Manage Walks' page was also hidden successfully.
 
+The developer used dev tools to check the resposiveness of all the apps pages, using the dropdown burger menu, which opened from the left as programmed, to click every page link. The 'Top' button was pressed on every page to test for the required action on smaller screen sizes, with the correct response given. The images were viewed and buttons all pressed on various browser sizes in dev tools to check responsiveness, along with forms and the search bar. All pages and thier contents were fully responsive whilst maintaining user friendly design aspects.
+
 ### Open Issues:
 
 * None
