@@ -378,6 +378,8 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 8. **JSHint:** Javascript Validator used to run all JS code through looking for errors - https://jshint.com/
 
+9. **Free Formatter:** A HTML formatter that Formatted my HTML 2 spaces per indent - https://www.freeformatter.com/
+
 ## Testing
 
 I carried our substantial testing on all of my apps pages and links. You can see the results of the tests [here](./TESTING.md)
