@@ -1,75 +1,74 @@
 {% extends "base.html" %}
 {% block content %} 
-
-    <!-- Search Bar -->
-    <div class="row card-panel">
-        <form action="{{ url_for('search') }}" method="POST" class="col s12 search-bar">
-            <div class="row valign-wrapper center-align">
-                <div class="input-field col s12">
-                    <i class="fas fa-search prefix"></i>
-                    <input type="text" name="search" id="search" minlength="3" 
-                        class="validate" required>
-                    <label for="search">Search Walks <i class="fas fa-search left"></i></label>
-                </div>
-            </div>
-            <div class="row valign-wrapper center-align">  
-                <div class="col s12 search">
-                    <button type="submit" 
-                        class="btn-small green accent-2 blue-grey-text text-darken-3">
-                            Search
-                    </button>
-                    <a href="{{ url_for('get_walks_parks') }}" 
-                        class="btn-small blue-grey-text text-lighten-5 blue-grey darken-3">
-                            Reset
-                    </a>
-                </div>
-            </div>
-        </form>
+<!-- Search Bar -->
+<div class="row card-panel">
+  <form action="{{ url_for('search') }}" method="POST" class="col s12 search-bar">
+    <div class="row valign-wrapper center-align">
+      <div class="input-field col s12">
+        <i class="fas fa-search prefix"></i>
+        <input type="text" name="search" id="search" minlength="3" 
+          class="validate" required>
+        <label for="search">Search Walks <i class="fas fa-search left"></i></label>
+      </div>
     </div>
-    {% if walks|length > 0 %}
-    <!-- Walks Accordion -->
-    <h3 class="center-align">All Walks</h3>
-    <ul class="collapsible popout blue-grey-text text-darken-3 center-align">
-        {% for walk in walks %}
-        <li>
-            <div class="collapsible-header">
-                <div class="col s12 m6">
-                    <i class="fas fa-caret-down"></i>
-                    <strong>{{ walk.walk_name }}</strong>
-                </div>
-            </div>
-            <div class="collapsible-body blue-grey-text text-darken-3">
-                <strong>{{ walk.park_name }}</strong>
-                <p>{{ walk.walk_description }}</p>
-                <p>{{ walk.walk_length }}</p>
-                <p><em>by: {{ walk.created_by }}</em></p>
-            </div> 
-        </li>
-        {% endfor %}
-    </ul>
-    <!-- Park Cards -->
-    <h3 class="center-align">All Parks</h3>
-    <div class="row">
-        {% for park in park %}
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="{{ park.park_image }}" alt="Park Image">
-                        <span class="card-title">{{ park.park_name }}</span>
-                    </div>
-                    <div class="card-content blue-grey-text text-darken-3">
-                        <p>{{ park.park_description }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
+    <div class="row valign-wrapper center-align">
+      <div class="col s12 search">
+        <button type="submit" 
+          class="btn-small green accent-2 blue-grey-text text-darken-3">
+        Search
+        </button>
+        <a href="{{ url_for('get_walks_parks') }}" 
+          class="btn-small blue-grey-text text-lighten-5 blue-grey darken-3">
+        Reset
+        </a>
+      </div>
     </div>
-    <!-- Google Map -->
-    <div class="container">
-        <div id="map"></div>
+  </form>
+</div>
+{% if walks|length > 0 %}
+<!-- Walks Accordion -->
+<h3 class="center-align">All Walks</h3>
+<ul class="collapsible popout blue-grey-text text-darken-3 center-align">
+  {% for walk in walks %}
+  <li>
+    <div class="collapsible-header">
+      <div class="col s12 m6">
+        <i class="fas fa-caret-down"></i>
+        <strong>{{ walk.walk_name }}</strong>
+      </div>
     </div>
-    {% else %}
-        <h3 class="center-align">No Results Found!</h3>
-    {% endif %}
+    <div class="collapsible-body blue-grey-text text-darken-3">
+      <strong>{{ walk.park_name }}</strong>
+      <p>{{ walk.walk_description }}</p>
+      <p>{{ walk.walk_length }}</p>
+      <p><em>by: {{ walk.created_by }}</em></p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<!-- Park Cards -->
+<h3 class="center-align">All Parks</h3>
+<div class="row">
+  {% for park in park %}
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{ park.park_image }}" alt="Park Image">
+        <span class="card-title">{{ park.park_name }}</span>
+      </div>
+      <div class="card-content blue-grey-text text-darken-3">
+        <p>{{ park.park_description }}
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<!-- Google Map -->
+<div class="container">
+  <div id="map"></div>
+</div>
+{% else %}
+<h3 class="center-align">No Results Found!</h3>
+{% endif %}
 {% endblock %}

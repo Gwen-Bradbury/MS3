@@ -1,70 +1,67 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <!-- Usernames Name-->
-    <div class="row">
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel blue-grey-text text-darken-3">
-                <h3 class="center-align">
-                    {{ username }}'s Walks
-                </h3>
-            </div>
-        </div>
+<!-- Usernames Name-->
+<div class="row">
+  <div class="col s12 m8 offset-m2">
+    <div class="card-panel blue-grey-text text-darken-3">
+      <h3 class="center-align">
+        {{ username }}'s Walks
+      </h3>
     </div>
-    <!-- Accordion of Users Added Walks -->
-    {% for walk in walks %}
-    {% if session.user|lower == walk.created_by|lower %}
-    <ul class="collapsible popout center-align blue-grey-text text-darken-3">
-        <li>
-            <div class="collapsible-header">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <i class="fas fa-caret-down"></i>
-                        <strong>{{ walk.walk_name }}</strong>
-                    </div>
-                    <div class="col s12 m6">
-                        <a href="{{ url_for('edit_walks', walk_id=walk._id) }}" 
-                            class="btn-small green accent-2 blue-grey-text text-darken-3">
-                                Edit Walk
-                        </a>
-                        <!-- Modal Trigger -->
-                        <button data-target="{{ walk._id }}" 
-                            class=" modal-trigger btn-small blue-grey-text text-lighten-5 blue-grey darken-3" >
-                                Delete Walk
-                        </button>
-                        <!-- Modal Structure -->
-                        <div id="{{ walk._id }}" class="modal">
-                            <div class="modal-content">
-                                <h4>Are you sure you want to delete this walk?</h4>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="{{ url_for('delete_walks', walk_id=walk._id) }}" data-target="{{ walk._id }}"
-                                    class="modal-close btn-small green accent-2 blue-grey-text text-darken-3">
-                                        Delete
-                                </a>
-                                <a href="{{ url_for('get_walks_parks') }}" 
-                                    class="modal-close btn-small blue-grey-text text-lighten-5 blue-grey darken-3">
-                                        Cancel
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  </div>
+</div>
+<!-- Accordion of Users Added Walks -->
+{% for walk in walks %}
+{% if session.user|lower == walk.created_by|lower %}
+<ul class="collapsible popout center-align blue-grey-text text-darken-3">
+  <li>
+    <div class="collapsible-header">
+      <div class="row">
+        <div class="col s12 m6">
+          <i class="fas fa-caret-down"></i>
+          <strong>{{ walk.walk_name }}</strong>
+        </div>
+        <div class="col s12 m6">
+          <a href="{{ url_for('edit_walks', walk_id=walk._id) }}" 
+            class="btn-small green accent-2 blue-grey-text text-darken-3">
+          Edit Walk
+          </a>
+          <!-- Modal Trigger -->
+          <button data-target="{{ walk._id }}" 
+            class=" modal-trigger btn-small blue-grey-text text-lighten-5 blue-grey darken-3" >
+          Delete Walk
+          </button>
+          <!-- Modal Structure -->
+          <div id="{{ walk._id }}" class="modal">
+            <div class="modal-content">
+              <h4>Are you sure you want to delete this walk?</h4>
             </div>
-            <div class="collapsible-body blue-grey-text text-darken-3">
-                <div class="row">
-                    <strong>{{ walk.park_name }}</strong>
-                    <p>{{ walk.walk_description }}</p>
-                    <p>{{ walk.walk_length }}</p>
-                    <p><em>by:  {{ walk.created_by }}</em></p>
-                </div>
+            <div class="modal-footer">
+              <a href="{{ url_for('delete_walks', walk_id=walk._id) }}" data-target="{{ walk._id }}"
+                class="modal-close btn-small green accent-2 blue-grey-text text-darken-3">
+              Delete
+              </a>
+              <a href="{{ url_for('get_walks_parks') }}" 
+                class="modal-close btn-small blue-grey-text text-lighten-5 blue-grey darken-3">
+              Cancel
+              </a>
             </div>
-        </li>
-    </ul>
-    {% endif %}
-    {% endfor %}
-
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="collapsible-body blue-grey-text text-darken-3">
+      <div class="row">
+        <strong>{{ walk.park_name }}</strong>
+        <p>{{ walk.walk_description }}</p>
+        <p>{{ walk.walk_length }}</p>
+        <p><em>by:  {{ walk.created_by }}</em></p>
+      </div>
+    </div>
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
 {% block googlemap %}
 {% endblock %}
-
 {% endblock %}

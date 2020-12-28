@@ -1,94 +1,93 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <h3 class="center-align">Manage Parks</h3>
-        <!-- Park Cards -->
-        <div class="row">
-            {% for park in park %}
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="{{ park.park_image }}" alt="Park Image">
-                            <span class="card-title">{{ park.park_name }}</span>
-                        </div>
-                        <div class="card-content blue-grey-text text-darken-3">
-                            <p>{{ park.park_description }}</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="{{ url_for('edit_park', park_id=park._id) }}" 
-                                class="btn-small green accent-2 blue-grey-text text-darken-3">
-                                    Edit Park
-                            </a>
-                            <!-- Modal Trigger -->
-                            <button data-target="{{ park._id }}" 
-                                class=" modal-trigger btn-small blue-grey-text text-lighten-5 blue-grey darken-3" >
-                                    Delete Park
-                            </button>
-                            <!-- Modal Structure -->
-                            <div id="{{ park._id }}" class="modal">
-                                <div class="modal-content">
-                                    <h4>Are you sure you want to delete this park?</h4>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="{{ url_for('delete_park', park_id=park._id) }}" data-target="{{ park._id }}"
-                                        class="modal-close btn-small green accent-2 blue-grey-text text-darken-3">
-                                            Delete
-                                    </a>
-                                    <a href="{{ url_for('get_park') }}" 
-                                        class="modal-close btn-small blue-grey-text text-lighten-5 blue-grey darken-3">
-                                            Cancel
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
+<h3 class="center-align">Manage Parks</h3>
+<!-- Park Cards -->
+<div class="row">
+  {% for park in park %}
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{ park.park_image }}" alt="Park Image">
+        <span class="card-title">{{ park.park_name }}</span>
+      </div>
+      <div class="card-content blue-grey-text text-darken-3">
+        <p>{{ park.park_description }}</p>
+      </div>
+      <div class="card-action">
+        <a href="{{ url_for('edit_park', park_id=park._id) }}" 
+          class="btn-small green accent-2 blue-grey-text text-darken-3">
+        Edit Park
+        </a>
+        <!-- Modal Trigger -->
+        <button data-target="{{ park._id }}" 
+          class=" modal-trigger btn-small blue-grey-text text-lighten-5 blue-grey darken-3" >
+        Delete Park
+        </button>
+        <!-- Modal Structure -->
+        <div id="{{ park._id }}" class="modal">
+          <div class="modal-content">
+            <h4>Are you sure you want to delete this park?</h4>
+          </div>
+          <div class="modal-footer">
+            <a href="{{ url_for('delete_park', park_id=park._id) }}" data-target="{{ park._id }}"
+              class="modal-close btn-small green accent-2 blue-grey-text text-darken-3">
+            Delete
+            </a>
+            <a href="{{ url_for('get_park') }}" 
+              class="modal-close btn-small blue-grey-text text-lighten-5 blue-grey darken-3">
+            Cancel
+            </a>
+          </div>
         </div>
-        <!-- Add a Park -->
-        <h3 class="center-align">Add A Park</h3>
-        <div class="row card-panel blue-grey-text text-darken-3">
-        <form class="col s12" method="POST" action="{{ url_for('add_park') }}">
-            <!-- Park Name -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix"></i>
-                    <input id="park_name" name="park_name" minlength="5" maxlength="50" 
-                        type="text" class="validate" required>
-                    <label for="park_name">Park Name:</label>
-                </div>
-            </div>
-            <!-- Park Image -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix"></i>
-                    <input id="park_image" name="park_image" minlength="5" type="text"
-                       value="{{ park.park_image }}" class="materialize-textarea validate" required>
-                    <label for="park_image">Park Image URL: http://</label>
-                </div>
-            </div>
-            <!-- Park Description -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix"></i>
-                    <textarea id="park_description" name="park_description" minlength="5" 
-                        class="materialize-textarea validate" required></textarea>
-                    <label for="park_description">Park Description:</label>
-                </div>
-            </div>
-            <!-- Add Park Button -->
-            <div class="row">
-                <div class="col s12 center-align">
-                    <button type="submit" class="btn-large green accent-2 blue-grey-text text-darken-3">
-                        Add Park
-                    </button>
-                    <a href="{{ url_for('get_park') }}" class="btn-large blue-grey-text text-lighten-5 blue-grey darken-3">
-                        Cancel
-                    </a>
-                </div>
-            </div>
-        </form>
+      </div>
     </div>
+  </div>
+  {% endfor %}
+</div>
+<!-- Add a Park -->
+<h3 class="center-align">Add A Park</h3>
+<div class="row card-panel blue-grey-text text-darken-3">
+  <form class="col s12" method="POST" action="{{ url_for('add_park') }}">
+    <!-- Park Name -->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-pencil-alt prefix"></i>
+        <input id="park_name" name="park_name" minlength="5" maxlength="50" 
+          type="text" class="validate" required>
+        <label for="park_name">Park Name:</label>
+      </div>
+    </div>
+    <!-- Park Image -->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-align-left prefix"></i>
+        <input id="park_image" name="park_image" minlength="5" type="text"
+          value="{{ park.park_image }}" class="materialize-textarea validate" required>
+        <label for="park_image">Park Image URL: http://</label>
+      </div>
+    </div>
+    <!-- Park Description -->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-align-left prefix"></i>
+        <textarea id="park_description" name="park_description" minlength="5" 
+          class="materialize-textarea validate" required></textarea>
+        <label for="park_description">Park Description:</label>
+      </div>
+    </div>
+    <!-- Add Park Button -->
+    <div class="row">
+      <div class="col s12 center-align">
+        <button type="submit" class="btn-large green accent-2 blue-grey-text text-darken-3">
+        Add Park
+        </button>
+        <a href="{{ url_for('get_park') }}" class="btn-large blue-grey-text text-lighten-5 blue-grey darken-3">
+        Cancel
+        </a>
+      </div>
+    </div>
+  </form>
+</div>
 {% block googlemap %}
 {% endblock %}
 {% endblock %}
