@@ -95,10 +95,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/toTopButton.js') }}"></script>
+    {% block googlemap %}
     <script src="{{ url_for('static', filename='js/map.js') }}"></script>
     <script defer 
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-SvD6y3b-SZGUapxQHFYgeYCRv_mkJMc&callback=initMap">
     </script>
+    {% endblock %}
 	{% block scripts %}
 	{% endblock %}
 </body>
