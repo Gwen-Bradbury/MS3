@@ -377,6 +377,10 @@ https://www.w3.org/Style/CSS/Overview.en.html
 6. **W3C Markup Validation Service:** Used to run all html and css code through a validation process looking for errors - https://validator.w3.org/
    https://jigsaw.w3.org/css-validator/validator
 
+7. **Pep8:** Python Validator used to run all python code through to look for errors -  http://pep8online.com/
+
+8. **JSHint:** Javascript Validator used to run all JS code through looking for errors - https://jshint.com/
+
 ## Testing
 
 1.  http://ami.responsivedesign.is/ has been used to see how the site performs on different Apple devices and their viewports, all links, icons performed as expected on all devices. I also used it to create the AppleDevicesView.png at the top of this Readme.
@@ -497,7 +501,7 @@ All of my HTML, CSS and Javascript was run through the validators.
 - Errors on the HTML validator relate to the python in the HTML documents and only having a Doctype on base.html. The other HTML pages
 extend from this one.
 
-- There were no Errors on the CSS validator.
+- There were no Errors or Warnings on the CSS validator.
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -507,8 +511,9 @@ extend from this one.
 </p>
 
 - There were no Errors or Warnings on the Javascript validator.
-            
 
+- There were no Errors or Warnings on the Python validator.
+            
 ## Deployment
 
 This website was developed in Gitpod and pushed to the remote repositories, GitHub and Heroku. The live page is hosted on Heroku.
