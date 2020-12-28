@@ -121,16 +121,16 @@ https://coolors.co/8e9aaf-cbc0d3-f0d1d4-dee2ff
 
 And matched this as best I could to the CCS colors on Materialize, which I used throughout my project.
 
-I used ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
-I used ![#FFF](https://placehold.it/15/FFF/000000?text=+) #fff (white) as my text color as it stood out clearly against the dark background.
-![#ECEFF1](https://placehold.it/15/ECEFF1/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) as a background color to the flash messages, with ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3)
+I used #37474f (Materialize shade: blue-grey darken-3) for the background color of my pages as it's dark and contrasts with my images.
+I used #fff (white) as my text color as it stood out clearly against the dark background.
+#eceff1 (Materialize shade: blue-grey lighten-5) as a background color to the flash messages, with #37474f (Materialize shade: blue-grey darken-3)
 as the flash message text color.
-![#FFF](https://placehold.it/15/FFF/000000?text=+) #fff (white) is also used as the background to my burger menu on mobile devices with the ![#37474F](https://placehold.it/15/37473F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) text color
+#fff (white) is also used as the background to my burger menu on mobile devices with the #37474f (Materialize shade: blue-grey darken-3) text color
 to give it some separation from the main page.
-All Cancel and Delete buttons have a text color of ![#ECEFF1](https://placehold.it/15/ECEFF1/000000?text=+) #eceff1 (Materialize shade: blue-grey lighten-5) with a background colour of ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474F (Materialize shade: blue-grey darken-3).
-All Edit and Add buttons have a text colour of ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) and a background colour of ![#69F0AE](https://placehold.it/15/69F0AE/000000?text=+) #69F0AE (Materialize shade: green accent-2).
-The back to top button has a background colour of ![#37474F](https://placehold.it/15/37474F/000000?text=+) #37474f (Materialize shade: blue-grey darken-3) and a background colour of ![#ECEFF1](https://placehold.it/15/ECEFF1/000000?text=+) #ECEFF1 (Materialize shade: blue-grey lighten-5).
-with a hover element that changes the background colour to ![#CFD8DC](https://placehold.it/15/CFD8DC/000000?text=+) #CFD8DC (Materialize shade: blue-grey lighten-4).
+All Cancel and Delete buttons have a text color of #eceff1 (Materialize shade: blue-grey lighten-5) with a background colour of #37474F (Materialize shade: blue-grey darken-3).
+All Edit and Add buttons have a text colour of #37474f (Materialize shade: blue-grey darken-3) and a background colour of #69F0AE (Materialize shade: green accent-2).
+The back to top button has a background colour of #37474f (Materialize shade: blue-grey darken-3) and a background colour of #ECEFF1 (Materialize shade: blue-grey lighten-5).
+with a hover element that changes the background colour to #CFD8DC (Materialize shade: blue-grey lighten-4).
 
 All my colors were chosen for thier relaxing and calming shades, in keeping with the tone of the app. The National Parks are nature at it's most beautiful and being within them and finding peace within them, allows you the time
 to relax and rejuvenate, with the added benefit of exercising by walking. 
@@ -280,6 +280,8 @@ The 'Cancel' button cancels the request to add a new walk.
 Unfortunately I didn't have time to implement the 'Add to My Walks' button that would have been visiable on the 'Home' page. I've added it to the 'Features left to Implement' README.md section.
 
 ### Features left to Implement -
+
+- _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly.
 
 - _Add Dropdown_ - Add a dropdown for the miles/km in add/edit walks instead of having to type it.
 
