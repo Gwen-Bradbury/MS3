@@ -103,8 +103,8 @@ def login():
 
 @app.route("/mywalks/<username>", methods=["GET", "POST"])
 def mywalks(username):
-    """ Get Users Username """
-    """ Get walks from DB """
+    """ Get Users Username
+        Get walks from DB """
     walks = list(mongo.db.walks.find())
     """ Get session users username from DB """
     username = mongo.db.users.find_one(
@@ -119,8 +119,8 @@ def mywalks(username):
 
 @app.route("/logout")
 def logout():
-    """ Log Out """
-    """ Remove user from session cookies """
+    """ Log Out
+        Remove user from session cookies """
     flash("You've Been Logged Out")
     session.pop("user")
     return redirect(url_for("login"))
