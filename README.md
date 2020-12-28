@@ -145,6 +145,8 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 - As a user, I want to be able to add walks, edit them and delete those walks easily.
 
+- As a user, I want confirmation before deleting something.
+
 - As a user, I want to find what I'm looking for quickly and easily.
 
 - As a user, I want to know how the app works and have easy to follow instructions.
@@ -270,7 +272,7 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
-- _Add Walks Here_ - When the user doesn't have any walks in thier My Walks page, a message needs to say 'Add Walks Here!'.
+- _Add Walks Here_ - When the user doesn't have any walks in thier 'My Walks' page, a message needs to say 'Add Walks Here!'.
 
 - _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
 
