@@ -270,7 +270,9 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
-- _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly.
+- _Add Walks Here_ - When the user doesn't have any walks in thier My Walks page, a message needs to say 'Add Walks Here!'.
+
+- _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
 
 - _Add Dropdown_ - Add a dropdown for the miles/km in add/edit walks instead of having to type it.
 
@@ -303,6 +305,8 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 - _Map Markers_- The ability to add another marker pin to the map when a new park is added to the DB.
 
 ### Bugs and Fixes Implemented after Testing -
+
+- _Edit buttons_ - Renamed the 'Edit' buttons within the edit walk and park pages to 'Update'.
 
 - _Images_ - Changed headline image as the origional one looked pixelated and streched.
 
