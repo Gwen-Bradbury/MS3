@@ -85,6 +85,7 @@ I have produced a mock up of all of my app's pages.
 It was recommended by my mentor to add a google map on the home page. 
 I used the markers on the map to point to the parks locations giving the user an idea into the distance between them and the park they're interested in.
 She also recommended a back to top button.
+On my last mentor call it was advised to remove the first name row from my 'Register' and 'Log In' pages.
 
 ### Design
 
@@ -287,6 +288,8 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
+- _Pagination_ - Use flask pagination for the parks and walks.
+
 - _Active Class_ - Use flask to highlight current page on nav link.
 
 - _Confirm Password_ - Another form box on the registration page that confirms the users password.
@@ -473,9 +476,9 @@ The results of this were -
         8. Links in the navbar are labelled clearly.
         9. The 'Top' button takes users back to the top of the page ensuring they always have somewhere to go and don't feel trapped as they get to the bottom of the page.
 
-**Open Issues:**
+### Open Issues:
 
-* 
+* None
 
 ### Validation of Code Testing -
 
