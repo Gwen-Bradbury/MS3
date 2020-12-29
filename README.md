@@ -167,6 +167,10 @@ I used a line height of 3 on my flash messages to make them stand out more and g
 
 - As a web designer and developer, I want the app to be interactive and give real time feedback when a user executes an action.
 
+- As a web designer and developer, I want my website to be user friendly with easy to navigate pages, and messages that tell the user when things aren't working as they should.
+
+- As a web designer and delevoper, My website should leave the user feeling positive and with the knowledge they were looking for within the site. Information on the site should be presented in a simple, clean formatt, with no unexpected surprises for the user.
+
 ## Features
 
 -   Responsive on all device sizes.
@@ -277,8 +281,6 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 ### Features left to Implement -
 
 - _Dropdown Arrows in Accordion_ - Make them point up when the accordion is open.
-
-- _Add Walks Here_ - When the user doesn't have any walks in thier 'My Walks' page, a message needs to say 'Add Walks Here!'.
 
 - _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
 

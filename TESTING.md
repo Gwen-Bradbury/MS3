@@ -106,7 +106,7 @@ related and unrelated words giving the correct response every time.
     - Various browsers and devices; the project was shared in the peer-code-review CI slack room and was tested by other CI Students, Mentors, Alumni and Tutors. 
 This is in direct relation to the 'Goals' and 'User Stories' from the 'UX' Section.
 The results of this were -
-        1. Users can easily understand the main purpose of the site.
+        1. Users can easily understand the main purpose of the app.
         2. It's colorful and engaging.
         3. Users can add, edit and delete inputs easily.
         4. Users can find what they're looking for quickly and easily, using the navbar and search bar.
@@ -151,7 +151,8 @@ The results of this were -
     - The 'Cancel' button was tested resulting in an empty form and the user transported to the top of the 'Manage Parks' page.
     - Upon correct input entry the 'Add A Park' form can be submitted. The user is again transported to the top of the 'Manage Parks' page with a flash message confirming the park has been added successfully.
     - The newly added park can be seen on the 'Home' and 'Manage Parks' pages and when clicking back onto the 'Manage Parks' page using the nav link, the flash message has disapeared as expected.
-    - The 'Top' button was tested again on this page and gave the required action, taking the user to the top of the current page.  
+    - The 'Top' button was tested again on this page and gave the required action, taking the user to the top of the current page. 
+    - The developer checked the navlinks from the other pages and they all loaded thier respective pages as programmed.
     - The 'Logout' link logs the user out of the app, taking them to the login page with a flash message stating successful logout.
     - The 'Log In' form was also tested, firstly with incorrect data to test the validation, a red underline and text box appears alerting the user to the mistake, and then with an incorrect registered username and password. THis provides the users with a flash message stating incorrect username and/or password.
     - Correct Log In information was then used which resulted in taking the user back to thier 'My Walks' page with thier username and walks visiable on it as programmed.
@@ -161,6 +162,6 @@ The developer used dev tools to check the resposiveness of all the apps pages, u
 
 ### Open Issues:
 
-* When using the search bar, the heading 'All Parks' and the google map don't hide when showing the users search results.
+* None
 
 ** Back to [README.md](./README.md) **
