@@ -99,6 +99,12 @@ h4 {
     color: #37474F;
   }
 
+/* My Walks h3 */
+.mywalks {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
 /* Footer */
 .copyright {
     margin: 5px;
