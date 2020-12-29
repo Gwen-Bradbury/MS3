@@ -161,6 +161,6 @@ The developer used dev tools to check the resposiveness of all the apps pages, u
 
 ### Open Issues:
 
-* None
+* When using the search bar, the heading 'All Parks' and the google map don't hide when showing the users search results.
 
 ** Back to [README.md](./README.md) **

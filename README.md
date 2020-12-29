@@ -276,6 +276,8 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
+- _Dropdown Arrows in Accordion_ - Make them point up when the accordion is open.
+
 - _Add Walks Here_ - When the user doesn't have any walks in thier 'My Walks' page, a message needs to say 'Add Walks Here!'.
 
 - _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
