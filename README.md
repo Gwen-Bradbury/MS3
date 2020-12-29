@@ -286,15 +286,13 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 - _Edit/Delete Walk_ - Take user back to 'My Walks' page instead of 'Home' page.
 
-- _Google Map Width_ - Make the google map wider on larger screen sizes.
-
 - _Username Title_ - Add title class to the username to give it a capital first letter.
 
 - _Modal_ - Put the 'Add Park' form inside a modal.
 
 - _Wildcard_ - Add wildcard to search bar.
 
-- _Pagination_ - Use flask pagination for the parks and walks to aviod endless scrolling.
+- _Pagination_ - Use flask pagination for the parks and walks to avoid endless scrolling.
 
 - _Active Class_ - Use flask to highlight current page on nav link.
 
