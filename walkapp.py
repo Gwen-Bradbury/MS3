@@ -36,7 +36,8 @@ def search():
     """ Search Bar """
     search = request.form.get("search")
     walks = list(mongo.db.walks.find({"$text": {"$search": search}}))
-    return render_template("walks.html", walks=walks)
+    park = list(mongo.db.park.find({"$text": {"$search": search}}))
+    return render_template("walks.html", walks=walks, park=park)
 
 
 # Register Account
