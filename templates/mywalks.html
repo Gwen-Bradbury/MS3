@@ -11,9 +11,9 @@
   </div>
 </div>
 <!-- Accordion of Users Added Walks -->
+<h3 class="center-align mywalks">Your Added Walks Are Here!</h3>
 {% for walk in walks %}
 {% if session.user|lower == walk.created_by|lower %}
-<h3 class="center-align mywalks">Your Added Walks Are Here!</h3>
 <ul class="collapsible popout center-align blue-grey-text text-darken-3">
   <li>
     <div class="collapsible-header">
@@ -60,10 +60,8 @@
       </div>
     </div>
   </li>
-{% else %}
-    <h3 class="center-align">Add Some Walks to See Them Here!</h3>
-{% endif %}
 </ul>
+{% endif %}
 {% endfor %}
 {% block googlemap %}
 {% endblock %}
