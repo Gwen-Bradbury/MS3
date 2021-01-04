@@ -280,6 +280,10 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
+- _Map Markers_- The ability to add another marker pin to the map when a new park is added to the DB, and only show one pin on the map when the user uses the search bar to search for a park.
+
+- _Username Title_ - Add title class to the username to give it a capital first letter.
+
 - _Dropdown Arrows in Accordion_ - Make them point up when the accordion is open.
 
 - _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
@@ -287,10 +291,6 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 - _Add Dropdown_ - Add a dropdown for the miles/km in add/edit walks instead of having to type it.
 
 - _Add Some Walks to see them Here!_ - Else statement on the mywalks.html that shows when users haven't added any walks.
-
-- _Edit/Delete Walk_ - Take user back to 'My Walks' page instead of 'Home' page.
-
-- _Username Title_ - Add title class to the username to give it a capital first letter.
 
 - _Modal_ - Put the 'Add Park' form inside a modal.
 
@@ -307,8 +307,6 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 - _Contact Us Form_- A form that allows users to email the Admin if they have any problems when using the app. They will get an automatically generated email reply confirming the email has been received.
 
 - _Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
-
-- _Map Markers_- The ability to add another marker pin to the map when a new park is added to the DB and cluster them, and only show one pin on the map when the user uses the search bar to search for a park.
 
 ### Bugs and Fixes Implemented after Testing -
 
