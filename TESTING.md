@@ -164,6 +164,6 @@ The developer used dev tools to check the resposiveness of all the apps pages, u
 
 * - _Map Markers_- The ability to cluster them.
 
-* - _Edit/Delete/Add Walk_ - Takes user back to 'My Walks' page instead of 'Home' page.
+* - _Edit/Delete/Add Walk_ - Takes user back to 'Home' page instead of 'My Walks' page.
 
 ** Back to [README.md](./README.md) **
