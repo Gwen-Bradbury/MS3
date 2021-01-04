@@ -46,8 +46,6 @@
   </li>
   {% endfor %}
 </ul>
-{% else %}
-    <h3 class="center-align">No Results Found!</h3>
 {% endif %}
 {% if park|length > 0 %}
 <!-- Park Cards -->
@@ -72,5 +70,7 @@
 <div class="container">
   <div id="map" alt="Google Map Failure"></div>
 </div>
+{% else %}
+    <h3 class="center-align">No Results Found!</h3>
 {% endif %}
 {% endblock %}
