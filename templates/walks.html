@@ -8,7 +8,7 @@
         <i class="fas fa-search prefix"></i>
         <input type="text" name="search" id="search" minlength="3" 
           class="validate" required>
-        <label for="search">Search Walks <i class="fas fa-search left"></i></label>
+        <label for="search">Search Parks <i class="fas fa-search left"></i></label>
       </div>
     </div>
     <div class="row valign-wrapper center-align">
@@ -46,6 +46,8 @@
   </li>
   {% endfor %}
 </ul>
+{% else %}
+    <h3 class="center-align">No Walk Results Found!</h3>
 {% endif %}
 {% if park|length > 0 %}
 <!-- Park Cards -->
@@ -71,6 +73,6 @@
   <div id="map" alt="Google Map Failure"></div>
 </div>
 {% else %}
-    <h3 class="center-align">No Results Found!</h3>
+    <h3 class="center-align">No Park Results Found!</h3>
 {% endif %}
 {% endblock %}
