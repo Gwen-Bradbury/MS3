@@ -188,7 +188,7 @@ The nav links have an a:hover CSS element that allows the user to see that the c
 - _Headline Image_- The image is bright and bold, to catch the users eye, and responsive for smaller screen sizes
 
 - _Search Bar_- The Search Bar allows easy navigation throught the Parks, and Walks within them, efficiently finding what the user's looking for without endless scrolling.
-Simply type a keyword into the text area hit 'Search' and all the Walks with that keyword will be listed below. If no Walks can be found, the user is faced with a 
+Simply type a keyword into the text area hit 'Search' and all the Walks with that keyword will be listed below. If no Walks or Parks can be found, the user is faced with a 
 message stating 'No Results Found!' 
 
 - _List of Parks_- A card containing a picture and information on that particular park. They are visiable two to a row on medium and larger screens and are one below the other on smaller screens and mobiles.
@@ -289,8 +289,6 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 - _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
 
 - _Add Dropdown_ - Add a dropdown for the miles/km in add/edit walks instead of having to type it.
-
-- _Add Some Walks to see them Here!_ - Else statement on the mywalks.html that shows when users haven't added any walks.
 
 - _Modal_ - Put the 'Add Park' form inside a modal.
 
