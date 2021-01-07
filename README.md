@@ -282,8 +282,6 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 - _Map Markers_- The ability to add another marker pin to the map when a new park is added to the DB, and only show one pin on the map when the user uses the search bar to search for a park.
 
-- _Username Title_ - Add title class to the username to give it a capital first letter.
-
 - _Dropdown Arrows in Accordion_ - Make them point up when the accordion is open.
 
 - _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
@@ -307,6 +305,8 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 - _Language button_- A button that can be clicked that translates the site into different languages so more people can use it.
 
 ### Bugs and Fixes Implemented after Testing -
+
+- _.title Class_ - Give the users first name a capital letter.
 
 - _Edit buttons_ - Renamed the 'Edit' buttons within the edit walk and park pages to 'Update'.
 
