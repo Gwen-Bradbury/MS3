@@ -306,6 +306,8 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Bugs and Fixes Implemented after Testing -
 
+- _Walks_ - After Editing/Deleting/Adding a walk users now get taken to the 'My Walks' page instead of the 'Home' page. Using the cancel buttons within the Delete modal and Edit walk form will also take the user back to the 'My Walks' page.
+
 - _.title Class_ - Give the users first name a capital letter.
 
 - _Edit buttons_ - Renamed the 'Edit' buttons within the edit walk and park pages to 'Update'.
