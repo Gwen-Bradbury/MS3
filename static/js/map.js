@@ -21,7 +21,31 @@ function initMap() {
         {
             coordinates: { lat: 54.4609 , lng: -3.0886 },
             content:'<p>Lake District<p>'
-        }
+        },
+        {
+            coordinates: { lat: 51.1346 , lng: -3.6462 },
+            content:'<p>Exmoor<p>'
+        },
+        {
+            coordinates: { lat: 51.8815 , lng: -3.4435 },
+            content:'<p>Breacon Beacons<p>'
+        },
+        {
+            coordinates: { lat: 57.0492 , lng: -3.5616 },
+            content:'<p>Cairngorms<p>'
+        },
+        {
+            coordinates: { lat: 54.3872 , lng: -0.8927 },
+            content:'<p>North Yorkshire Moors<p>'
+        },
+        {
+            coordinates: { lat: 50.8759 , lng: -1.6328 },
+            content:'<p>New Forest<p>'
+        },  
+        {
+            coordinates: { lat: 50.9279 , lng: -0.6625 },
+            content:'<p>South Downs<p>'
+        } 
     ];
     /* Info Window */
     let infoWindow = new google.maps.InfoWindow();

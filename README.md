@@ -280,7 +280,7 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
-- _Map Markers_- The ability to add another marker pin to the map when a new park is added to the DB, and only show one pin on the map when the user uses the search bar to search for a park.
+- _Map Markers_- The ability to add another marker pin to the map when a new park is added to the DB.
 
 - _Dropdown Arrows in Accordion_ - Make them point up when the accordion is open.
 
