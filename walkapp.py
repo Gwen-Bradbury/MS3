@@ -74,7 +74,11 @@ def register():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """ Log In """
-    if request.method == "POST":
+    if "user" in session:
+        return redirect(url_for(
+                "mywalks", username=session["user"]))
+
+    elif request.method == "POST":
         """ Check if username already exists in DB """
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").title()})
