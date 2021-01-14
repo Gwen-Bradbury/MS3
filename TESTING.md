@@ -162,6 +162,6 @@ The developer used dev tools to check the resposiveness of all the apps pages, u
 
 ### Open Issues:
 
-* - _Map Markers_- The ability to cluster them with an information box.
+* - _Map Markers_- At the moment the map markers won't cluster with an information box.
 
 ** Back to [README.md](./README.md) **
