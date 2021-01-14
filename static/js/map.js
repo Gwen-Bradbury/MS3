@@ -45,7 +45,27 @@ function initMap() {
         {
             coordinates: { lat: 50.9279 , lng: -0.6625 },
             content:'<p>South Downs<p>'
-        } 
+        },
+        {
+            coordinates: { lat: 56.1114 , lng: -4.6289 },
+            content:'<p>Loch Lomond<p>'
+        }, 
+        {
+            coordinates: { lat: 55.3378 , lng: -2.2567 },
+            content:'<p>Northumberland<p>'
+        }, 
+        {
+            coordinates: { lat: 51.8121 , lng: -5.1011 },
+            content:'<p>Pembrokeshire Coast<p>'
+        },
+        {
+            coordinates: { lat: 54.1963 , lng: -2.1632 },
+            content:'<p>Yorkshire Dales<p>'
+        },
+        {
+            coordinates: { lat: 52.6049 , lng: -1.6089 },
+            content:'<p>Broads<p>'
+        }
     ];
     /* Info Window */
     let infoWindow = new google.maps.InfoWindow();

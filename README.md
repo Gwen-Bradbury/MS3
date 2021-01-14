@@ -280,8 +280,6 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
-- _Map Markers_- Add a map marker for every UK national park.
-
 - _Dropdown Arrows in Accordion_ - Make them point up when the accordion is open.
 
 - _Error Messages_ - Implement flask 404 and 500 error messages that are more user friendly for defensive design.
