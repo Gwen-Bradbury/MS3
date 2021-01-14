@@ -130,7 +130,7 @@ def logout():
     if "user" not in session:
         flash("Please Login")
 
-        return redirect(url_for("/get_walks_parks"))
+        return redirect(url_for("login"))
 
     else:
         flash("You've Been Logged Out")
