@@ -280,7 +280,7 @@ Unfortunately I didn't have time to implement the 'Add to My Walks' button that 
 
 ### Features left to Implement -
 
-- _Map Markers_- The ability to add or delete marker pins to the map when a new park is added/deleted from the DB.
+- _Map Markers_- Add a map marker for every UK national park.
 
 - _Dropdown Arrows in Accordion_ - Make them point up when the accordion is open.
 
