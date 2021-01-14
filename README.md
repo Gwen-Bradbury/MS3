@@ -526,22 +526,22 @@ For more information about the above process; https://help.github.com/en/github/
 
 ### Content -
 
-1. Information on Parks and Walks -
+1. Information on Parks and Walks 
 
-    -https://www.peakdistrict.gov.uk/
-    -https://www.lakedistrict.gov.uk/
-    -https://www.snowdonia.gov.wales/
-    -https://www.visitdartmoor.co.uk/
+    - https://www.peakdistrict.gov.uk/
+    - https://www.lakedistrict.gov.uk/
+    - https://www.snowdonia.gov.wales/
+    - https://www.visitdartmoor.co.uk/
 
-2. Materialize - https://materializecss.com/ - 
+2. Materialize - https://materializecss.com/  
 
-    -Navbar 
-    -Cards 
-    -Forms 
+    - Navbar 
+    - Cards 
+    - Forms 
 
-3. w3 Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -
+3. w3 Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
-    -Back to Top Button
+    - Back to Top Button
 
 4. Wireframes - https://www.figma.com/file/r6CISvX0N6sXBacS11lnIs/MS3
 
@@ -553,11 +553,11 @@ For more information about the above process; https://help.github.com/en/github/
 
 1. Images -
 
-    -https://www.unsplash.com
-    -https://www.peakdistrict.gov.uk/
-    -https://www.lakedistrict.gov.uk/
-    -https://www.snowdonia.gov.wales/
-    -https://www.visitdartmoor.co.uk/
+    - https://www.unsplash.com
+    - https://www.peakdistrict.gov.uk/
+    - https://www.lakedistrict.gov.uk/
+    - https://www.snowdonia.gov.wales/
+    - https://www.visitdartmoor.co.uk/
 
 2. Contents table in README.md - http://ecotrust-canada.github.io/markdown-toc/
 
