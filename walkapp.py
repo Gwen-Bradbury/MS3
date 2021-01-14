@@ -124,11 +124,14 @@ def mywalks(username):
 
 @app.route("/logout")
 def logout():
-    """ Log Out
-        Remove user from session cookies """
-    flash("You've Been Logged Out")
-    session.pop("user")
-    return redirect(url_for("login"))
+    if "user" not in session:
+
+        return redirect(url_for("/get_walks_parks"))
+
+    else:
+        flash("You've Been Logged Out")
+        session.pop("user")
+        return redirect(url_for("login"))
 
 
 # Add Walk to DB
