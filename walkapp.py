@@ -124,7 +124,11 @@ def mywalks(username):
 
 @app.route("/logout")
 def logout():
+
+    """ Log Out
+        Remove user from session cookies """
     if "user" not in session:
+        flash("Please Login")
 
         return redirect(url_for("/get_walks_parks"))
 
