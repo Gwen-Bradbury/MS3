@@ -55,7 +55,7 @@
 This is my third milestone project; Designed to exhibit my capabilities and skills in javascript, as a student
 of Code Institute. (https://codeinstitute.net/)
 The goal was to showcase my skills to potential employers/recruiters, on a topic that I'm deeply interested in.
-My project allows users to discover new walks within the UK, inspiring them to get outside and enjoy the beautiful UK countryside.
+My project allows users to discover new walks within the UK's 15 National Parks, inspiring them to get outside and enjoy the beautiful UK countryside.
 My app contains a landing page, complete with headline image and images of the UK's National Parks, followed by a list of all the walks in the DB with a search bar for easy navigation throught these lists.
 There's a login and register page containing required form fields that give you access to the rest of the app, where users can add and delete walks that they've added. There's also a 'My Walks' page that lists all the 
 walks that they've added.
