@@ -164,4 +164,6 @@ The developer used dev tools to check the resposiveness of all the apps pages, u
 
 * _Map Markers_- At the moment the map markers won't cluster with an information box.
 
+* _Browser Back Button_ - The browsers back button takes the user to the last viewed page even after they've logged out, without having to log back in.
+
 ** Back to [README.md](./README.md) **
