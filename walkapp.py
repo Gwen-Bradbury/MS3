@@ -138,12 +138,6 @@ def logout():
         return redirect(url_for("login"))
 
 
-@app.after_request("/logout")
-def after_request(response):
-    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    return response
-
-
 # Add Walk to DB
 
 @app.route("/add_walk", methods=["GET", "POST"])
